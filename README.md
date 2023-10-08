@@ -11,7 +11,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-*Carlos Alberto Vieira de Souza
+* Carlos Alberto Vieira de Souza
 * Cristiano Guedes Horta
 * Guilherme Alves Lima
 * Vitor Luz de Sales
