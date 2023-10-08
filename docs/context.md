@@ -30,23 +30,3 @@ econômicas, economizando tempo na comparação de preços entre estabelecimento
 ## Público-Alvo
 
 Público-alvo são pessoas responsáveis pelas compras de supermercado, com idades entre 25 e 65 anos. Eles devem possuir conhecimentos básicos de tecnologia, acesso à internet e um dispositivo (smartphone ou computador).
-
-**Personas**
-Persona 1 - Maria de Lourdes do Rosário
-● Idade: 50 anos
-● Perfil: Dona de casa com três filhos adolescentes.
-● Necessidade: Procura uma aplicação que facilite a comparação de preços em supermercados próximos.
-
-
-Persona 2 - Luiz Carlos
-● Idade: 40 anos
-● Perfil: Dono de um restaurante.
-● Necessidade: Deseja economizar tempo e dinheiro comparando preços de
-ingredientes para seu restaurante.
-
-
-Persona 3 - Frederico Andrada
-● Idade: 30 anos
-● Perfil: Trabalhador e estudante.
-● Necessidade: Busca uma aplicação para comparar e organizar compras mensais.
-
