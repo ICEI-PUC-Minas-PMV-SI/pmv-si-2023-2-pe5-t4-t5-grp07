@@ -65,7 +65,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade | Responsável |
-|------|-----------------------------------------|----| ----|
+|-------|-----------------------------------------|----| ----|
 |RF-001| Cadastro de produtos com descrição, foto, preço e código | ALTA |  |
 |RF-002| Seleção de produtos em formato de carrinho para consulta futura    | MÉDIA | |
 |RF-003| Escolha de supermercados com base na região selecionada   | ALTA | |
