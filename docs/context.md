@@ -10,22 +10,22 @@ Atualmente, há uma lacuna na disponibilidade de uma solução prática para com
 
 ## Objetivos
 
-**Objetivo** **Geral**
-Desenvolver um trabalho acadêmico dissertativo, criando um sistema que permita a
-comparação de preços entre supermercados.
+### Objetivo Geral
+Desenvolver um trabalho acadêmico dissertativo, criando um sistema que permita a comparação de preços entre supermercados.
 
-**Objetivos Específicos
-**Para atender os objetivos geral do projeto, alguns objetivos específicos precisam ser cumpridos, entre eles:
-● Implementar a comparação de preços na lista de itens de varejo fornecidas pelo usuário;
-● Permitir a atualização de preços pelos clientes e pelos supermercados, tornando-o uma ferramenta colaborativa;
-● Permitir cadastro de usuário de usuários;
-● Permitir cadastro de administradores do site que manterão a base atualizada.
+### Objetivos Específicos
+
+Para atender os objetivos geral do projeto, alguns objetivos específicos precisam ser cumpridos, entre eles:
+
+* Implementar a comparação de preços na lista de itens de varejo fornecidas pelo usuário;
+* Permitir a atualização de preços pelos clientes e pelos supermercados, tornando-o uma ferramenta colaborativa;
+* Permitir cadastro de usuário de usuários;
+* Permitir cadastro de administradores do site que manterão a base atualizada.
 
 
 ## Justificativa
 
-Dada a crescente falta de tempo e a variação de preços de produtos, identificamos a oportunidade de criar uma aplicação que tornasse as compras de supermercado mais
-econômicas, economizando tempo na comparação de preços entre estabelecimentos.
+Dada a crescente falta de tempo e a variação de preços de produtos, identificamos a oportunidade de criar uma aplicação que tornasse as compras de supermercado mais econômicas, economizando tempo na comparação de preços entre estabelecimentos.
 
 ## Público-Alvo
 
