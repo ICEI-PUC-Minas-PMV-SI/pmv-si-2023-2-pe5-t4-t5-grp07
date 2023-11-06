@@ -52,7 +52,7 @@ header {
     height: 100px;
     background: #6BD489;
     display: grid;
-    grid-template-columns: 90px auto 800px 2px auto 2px auto 2px 210px;
+    grid-template-columns: auto auto auto 2px auto 2px auto 2px auto;
     column-gap: 20px;
 }
 
@@ -122,6 +122,7 @@ header {
     .cart {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .cart > .button {
@@ -144,6 +145,7 @@ header {
     .conta {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .conta > a {
