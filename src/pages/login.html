@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Preços</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="home"> <!-- Home -->
+    <!-- <header>
+        <div class="home"> 
             <a class="button" href="Link para página de pesquisa.">
                 <img src="../img/logo.png" alt="Logotipo">
             </a>
@@ -24,24 +20,22 @@
         <div class="marca">
             <p id="marca">Compare Preços</p>
         </div>
-        <div class="search"> <!-- Busca -->
+        <div class="search"> 
             <div class="container">
                 <img src="../img/lupa.png" alt="Lupa de Pesquisa">
                 <input type="text" placeholder="Buscar Produtos">
             </div>
         </div>
         <div class="verLin"></div>
-        <div class="cart"> <!-- Carrinho -->
+        <div class="cart"> 
             <a class="button" href="Link para página de carrinho.">
                 <p>Carrinho (X)</p>
             </a>
         </div>
         <div class="verLin"></div>
-        <div class="conta"> <!-- Conta -->
+        <div class="conta"> 
             <a href="Link para página de conta.">
-                <!-- <div class="foto">
-                    <img src="../img/user.png" alt="">
-                </div> -->
+            
                 <div class="nome">
                     <p id="cinEsc">Crie sua conta</p>
                 </div>
@@ -51,7 +45,7 @@
             </a>
         </div>
         <div class="verLin"></div>
-        <div class="local"> <!-- Localização -->
+        <div class="local"> 
             <div>
                 <img src="../img/location.png" alt="Localização">
             </div>
@@ -60,26 +54,34 @@
                 <p id="cinEsc">Av. Brasil 100...</p>
             </div>
         </div>
-    </header>
-
+    </header> -->
     <main>
         <section id="login">
             <div id="imagem">
-
-
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem vindo(a)</p>
-                <form action="login.php" method="post"></form>
-
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons md-dark">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email"
+                            required maxlength="30">
+                        <label for="ilogin">login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons md-dark">vpn_key</span>
+                        <input type="password" name="senha " id="isenha" placeholder="sua senha"
+                            autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <span class="material-icons md-dark">mail</span>
+                    </a>
+                </form>
             </div>
-
         </section>
-
-
     </main>
-
 </body>
-
 </html>

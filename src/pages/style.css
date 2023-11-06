@@ -1,4 +1,4 @@
-@media screen and (min-width:1200px) {
+@media screen and (min-width:992px) {
 
     /* Base */
     body {
@@ -42,7 +42,7 @@
     }
 
     p#marca {
-        font-size: 48px;
+        font-size: 30px;
         font-weight: 700;
         color: #fff;
     }
@@ -822,30 +822,46 @@
     .menuDel .button p {
         font-weight: 600;
     }
+
+    section#login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #6BD489;
+        width: 80vw;
+        height: 350px;
+        border-radius: 20px;
+        transform: translate(-50%, -50%);
+
+    }
+
+    section#login>div#imagem {
+        float: left;
+        width: 50%;
+        display: block;
+        background: white url(../img/mercado.jpg);
+        background-size: cover;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+
+    section#login>div#formulario {
+
+        display: block;
+        font-size: 1em;
+        width: 100%;
+
+    }
+
+
+    /* form > input[type=submit] {
+        display: block;
+        font-size: 1em;
+        width: 100%;
+    } */
 }
 
 @media screen and (max-width: 1199px) {
     /* Fazer depois */
-}
-
-
-section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #6BD489;
-    width: 250px;
-    height: 500px;
-    border-radius: 20px;
-    transform: translate(-50%, -50%);
-
-}
-
-section#login >div#imagem {
-
-background: grey url(../img/mercado.png);
-background-size: cover;
-height: 250px;
-
-
 }
