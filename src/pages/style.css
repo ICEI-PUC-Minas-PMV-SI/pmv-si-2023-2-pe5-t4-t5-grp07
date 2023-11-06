@@ -1,69 +1,71 @@
 @media screen and (min-width:1200px) {
-/* Base */
-body {
-    margin: 0;
-    background: #fff;
-}
 
-hr {
-    margin: 0;
-}
+    /* Base */
+    body {
+        margin: 0;
+        background: #fff;
+    }
 
-/* Regras de Fonte */
-@font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url(Poppins-Regular.woff);
-}
+    hr {
+        margin: 0;
+    }
 
-p,li {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-}
+    /* Regras de Fonte */
+    @font-face {
+        font-family: 'Poppins', sans-serif;
+        src: url(Poppins-Regular.woff);
+    }
 
-p#cinEsc {
-    color: #444;
-}
+    p,
+    li {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+    }
 
-p#cinCla {
-    color: #666;
-}
+    p#cinEsc {
+        color: #444;
+    }
 
-p#titPag {
-    font-size: 32px;
-    font-weight: 400;
-}
+    p#cinCla {
+        color: #666;
+    }
 
-p#semiBold {
-    font-weight: 600;
-}
+    p#titPag {
+        font-size: 32px;
+        font-weight: 400;
+    }
 
-p#marca {
-    font-size: 48px;
-    font-weight: 700;
-    color: #fff;
-}
+    p#semiBold {
+        font-weight: 600;
+    }
 
-/* Cabeçalho */
-header {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    background: #6BD489;
-    display: grid;
-    grid-template-columns: auto auto auto 2px auto 2px auto 2px auto;
-    column-gap: 20px;
-}
+    p#marca {
+        font-size: 48px;
+        font-weight: 700;
+        color: #fff;
+    }
 
-.verLin {
-    margin-top: 15px;
-    border-left: 1px solid #444;
-    height: 70px;
-}
+    /* Cabeçalho */
+    header {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background: #6BD489;
+        display: grid;
+        grid-template-columns: auto auto auto 2px auto 2px auto 2px auto;
+        column-gap: 20px;
+    }
+
+    .verLin {
+        margin-top: 15px;
+        border-left: 1px solid #444;
+        height: 70px;
+    }
 
     /* Home */
-    .home > .button {
+    .home>.button {
         position: absolute;
         top: 15px;
         left: 20px;
@@ -82,8 +84,8 @@ header {
     .marca {
         display: flex;
         align-items: center;
-             
-        }
+
+    }
 
     /* Busca */
     .search {
@@ -92,7 +94,7 @@ header {
         justify-content: right;
     }
 
-    .search > .container {
+    .search>.container {
         width: 400px;
         height: 50px;
         border-radius: 50px;
@@ -125,7 +127,7 @@ header {
         justify-content: center;
     }
 
-    .cart > .button {
+    .cart>.button {
         width: 116px;
         height: 50px;
         background: #0e8d39;
@@ -137,7 +139,7 @@ header {
 
     .cart p {
         position: relative;
-        top:50%;
+        top: 50%;
         margin-top: -12.5px;
     }
 
@@ -148,7 +150,7 @@ header {
         justify-content: center;
     }
 
-    .conta > a {
+    .conta>a {
         display: grid;
         grid-template-columns: auto auto auto;
         column-gap: 10px;
@@ -161,7 +163,7 @@ header {
         height: 50px;
     }
 
-    .foto > img {
+    .foto>img {
         width: 48px;
         height: 48px;
         border-radius: 50%;
@@ -176,46 +178,46 @@ header {
         align-items: center;
     }
 
-    .local > .texto {
+    .local>.texto {
         position: relative;
         left: 10px;
     }
 
-/* Corpo */
-.corpo {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50px 375px 50px 1fr 50px;
-    grid-template-rows: 100px auto;
-    row-gap: 15px;
-}
+    /* Corpo */
+    .corpo {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50px 375px 50px 1fr 50px;
+        grid-template-rows: 100px auto;
+        row-gap: 15px;
+    }
 
     /* Título da página */
-    .corpo > .title {
+    .corpo>.title {
         grid-column: 2;
         grid-row: 1;
         display: grid;
-        grid-template-rows: auto 2px; 
+        grid-template-rows: auto 2px;
         align-items: end;
     }
 
-    .title > p {
+    .title>p {
         position: relative;
         left: 20px;
     }
 
     /* Complemento da Linha Decorativa */
-    .corpo > .underline {
+    .corpo>.underline {
         grid-column: 4;
         grid-row: 1;
         display: flex;
         align-items: end;
     }
 
-    .underline > hr {
+    .underline>hr {
         width: 100%;
     }
 
@@ -228,7 +230,7 @@ header {
         justify-content: center;
     }
 
-    nav > .container {
+    nav>.container {
         margin-top: 10px;
         margin-bottom: 10px;
         display: grid;
@@ -237,7 +239,7 @@ header {
         row-gap: 5px;
     }
 
-    nav > .container a {
+    nav>.container a {
         height: 50px;
     }
 
@@ -257,72 +259,72 @@ header {
         color: inherit;
     }
 
-    nav > .container > div {
+    nav>.container>div {
         width: 300px;
         height: 50px;
         border-radius: 15px;
     }
 
-        /* Informações */
-        nav a.info > .icon {
-            width: 20px;
-            height: 20px;
-        }
+    /* Informações */
+    nav a.info>.icon {
+        width: 20px;
+        height: 20px;
+    }
 
-        nav a.info > .arrow {
-            width: 10px;
-            height: 15px;
-        }
+    nav a.info>.arrow {
+        width: 10px;
+        height: 15px;
+    }
 
-        nav #infoAtivo {
-            background-color: #6BD489;
-        }
+    nav #infoAtivo {
+        background-color: #6BD489;
+    }
 
-        /* Segurança */
-        nav a.security > .icon {
-            width: 20px;
-            height: 20px;
-        }
+    /* Segurança */
+    nav a.security>.icon {
+        width: 20px;
+        height: 20px;
+    }
 
-        nav a.security > .arrow {
-            width: 10px;
-            height: 15px;
-        }
+    nav a.security>.arrow {
+        width: 10px;
+        height: 15px;
+    }
 
-        nav #securityAtivo {
-            background-color: #6BD489;
-        }
+    nav #securityAtivo {
+        background-color: #6BD489;
+    }
 
-        /* Favoritos */
-        nav a.fav > .icon {
-            width: 20px;
-            height: 20px;
-        }
+    /* Favoritos */
+    nav a.fav>.icon {
+        width: 20px;
+        height: 20px;
+    }
 
-        nav a.fav > .arrow {
-            width: 10px;
-            height: 15px;
-        }
+    nav a.fav>.arrow {
+        width: 10px;
+        height: 15px;
+    }
 
-        nav #favAtivo {
-            background-color: #6BD489;
-        }
+    nav #favAtivo {
+        background-color: #6BD489;
+    }
 
-        /* Excluir */
-        nav a.delete > .icon {
-            width: 20px;
-            height: 20px;
-        }
+    /* Excluir */
+    nav a.delete>.icon {
+        width: 20px;
+        height: 20px;
+    }
 
-        nav a.delete > .arrow {
-            width: 10px;
-            height: 15px;
-        }
+    nav a.delete>.arrow {
+        width: 10px;
+        height: 15px;
+    }
 
-        nav #deleteAtivo {
-            background-color: #6BD489;
-        }
-    
+    nav #deleteAtivo {
+        background-color: #6BD489;
+    }
+
     /* Main Menu */
     main {
         grid-column: 4;
@@ -334,7 +336,7 @@ header {
         justify-content: center;
     }
 
-    main > .container {
+    main>.container {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 95%;
@@ -347,479 +349,479 @@ header {
     }
 
 
-        /* Informações */
-        .menuInfo > .container {
-            display: grid;
-            grid-template-rows: 50px 2px 50px 2px 50px 2px 50px 2px 50px;
-            row-gap: 5px;
-        }
-
-            /* Nome */
-            .menuInfo .name {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfo .name > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Gênero */
-            .menuInfo .gender {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfo .gender > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Data de Nascimento */
-            .menuInfo .date {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 180px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfo .date > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Endereço */
-            .menuInfo .address {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfo .address > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Botão Editar */
-            .menuInfo .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .menuInfo .button>a {
-                width: 100px;
-                height: 30px;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #0e8d39;
-                text-decoration: none;
-                color: #fff;
-            }
-
-            .menuInfo .button p {
-                font-weight: 600;
-            }
-
-        /* Info Editar */
-        .menuInfoEdit > .container {
-            display: grid;
-            grid-template-rows: 50px 2px 50px 2px 50px 2px auto 2px 50px;
-            row-gap: 5px;
-        }
-
-            /* Nome */
-            .menuInfoEdit .name {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 75px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfoEdit .name > p:first-child {
-                grid-column: 2;
-            }
-            
-            .menuInfoEdit .name > div {
-                height: 100%;
-                border-radius: 15px;
-                background: #ddd;
-                display: grid;
-                grid-template-columns: 15px 1fr 15px;
-                align-items: center;
-            }
-
-            .menuInfoEdit .name>div>input {
-                grid-column: 2;
-                height: 90%;
-                border: none;
-                background: #ddd;
-            }
-
-            /* Gênero */
-            .menuInfoEdit .gender {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfoEdit .gender > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Data de Nascimento */
-            .menuInfoEdit .date {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 180px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfoEdit .date > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Endereço */
-            .menuInfoEdit .address {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuInfoEdit .address > p:first-child {
-                grid-column: 2;
-            }
-
-            .menuInfoEdit .address>div {
-                height: 100%;
-                display: grid;
-                grid-template-columns: auto 1fr;
-                grid-template-rows: 50px 50px 50px 50px 50px 50px;
-                column-gap: 15px;
-                row-gap: 10px;
-                align-items: center;
-            }
-
-            .menuInfoEdit .address>div>div {
-                height: 100%;
-                border-radius: 15px;
-                background: #ddd;
-                display: grid;
-                grid-template-columns: 15px 1fr 15px;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .menuInfoEdit .address div>input {
-                grid-column: 2;
-                height: 90%;
-                border: none;
-                background: #ddd;
-            }
-
-            /* Botão Editar */
-            .menuInfoEdit .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .menuInfoEdit .button>a {
-                width: 100px;
-                height: 30px;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #0e8d39;
-                text-decoration: none;
-                color: #fff;
-            }
-
-            .menuInfoEdit .button p {
-                font-weight: 600;
-            }
-
-        /* Segurança */
-        .menuSecurity > .container {
-            display: grid;
-            grid-template-rows: 50px 2px 50px 2px;
-            row-gap: 5px;
-        }
-
-            /* E-mail */
-            .menuSecurity .email {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuSecurity .email > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Senha */
-            .menuSecurity .pass {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 200px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuSecurity .pass > p:first-child {
-                grid-column: 2;
-            }
-
-            .menuSecurity .pass>.button>a {
-                width: 200px;
-                height: 30px;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #0e8d39;
-                text-decoration: none;
-                color: #fff;
-            }
-
-            .menuSecurity .pass>.button p {
-                font-weight: 600;
-            }
-
-
-        /* Segurança Editar */
-        .menuSecEdit > .container {
-            display: grid;
-            grid-template-rows: 50px 2px auto 2px;
-            row-gap: 5px;
-        }
-
-            /* E-mail */
-            .menuSecEdit .email {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuSecEdit .email > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Senha */
-            .menuSecEdit .pass {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 90px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuSecEdit .pass > p:first-child {
-                grid-column: 2;
-            }
-
-                /* Troca de Senha */
-                .menuSecEdit .pass>div {
-                    width: 300px;
-                    display: grid;
-                    grid-template-rows: 50px 50px 50px 50px;
-                    row-gap: 10px;
-                    align-items: center;
-                    justify-self: baseline;
-                }
-
-                .menuSecEdit .pass>div>div:not(.button) {
-                    height: 100%;
-                    border-radius: 15px;
-                    background: #ddd;
-                    display: grid;
-                    grid-template-columns: 15px 1fr 15px;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .menuSecEdit input {
-                    grid-column: 2;
-                    height: 90%;
-                    border: none;
-                    background: #ddd;
-                    text-align: center;
-                }
-
-                .menuSecEdit .pass .button>a {
-                    position: relative;
-                    left: 50px;
-                    width: 200px;
-                    height: 30px;
-                    border-radius: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: #0e8d39;
-                    text-decoration: none;
-                    color: #fff;
-                }
-
-                .menuSecEdit .pass>.button p {
-                    font-weight: 600;
-                }
-
-        /* Favoritos */
-        .menuFav > .container {
-            display: grid;
-            grid-template-rows: auto 2px 50px;
-            row-gap: 5px;
-        }
-
-            /* Mercados */
-            .menuFav .market {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 200px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuFav .market > p:first-child {
-                grid-column: 2;
-            }
-
-            /* Botão Editar */
-            .menuFav .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .menuFav .button>a {
-                width: 100px;
-                height: 30px;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #0e8d39;
-                text-decoration: none;
-                color: #fff;
-            }
-
-            .menuFav .button p {
-                font-weight: 600;
-            }
-
-        /* Favoritos Editar */
-        .menuFavEdit > .container {
-            display: grid;
-            grid-template-rows: auto 2px 50px;
-            row-gap: 5px;
-        }
-
-            /* Mercados */
-            .menuFavEdit .market {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 10px 200px 1fr;
-                align-items: center;
-                justify-self: baseline;
-            }
-
-            .menuFavEdit .market > p:first-child {
-                grid-column: 2;
-            }
-
-                /* Lista */
-                .menuFavEdit .market>div>div {
-                    display: grid;
-                    grid-template-columns: auto 1fr;
-                }
-
-            /* Botão Editar */
-            .menuFavEdit .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .menuFavEdit .button>a {
-                width: 100px;
-                height: 30px;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #0e8d39;
-                text-decoration: none;
-                color: #fff;
-            }
-
-            .menuFavEdit .button p {
-                font-weight: 600;
-            }
-
-        /* Excluir Conta */
-        .menuDel > .container {
-            display: grid;
-            grid-template-rows: 50px 2px 50px;
-            row-gap: 5px;
-        }
-
-            /* Box de Confirmação */
-            .menuDel .box {
-                width: 100%;
-                border-radius: 15px;
-                background: #ddd;
-                display: grid;
-                grid-template-columns: 15px 1fr 15px;
-            }
-
-            .menuDel .box>input {
-                grid-column: 2;
-                border: none;
-                object-fit: cover;
-                background: #ddd;
-            }
-
-            /* Botão Excluir */
-            .menuDel .button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .menuDel .button>a {
-                width: 100px;
-                height: 30px;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background: #0e8d39;
-                text-decoration: none;
-                color: #fff;
-            }
-
-            .menuDel .button p {
-                font-weight: 600;
-            }
+    /* Informações */
+    .menuInfo>.container {
+        display: grid;
+        grid-template-rows: 50px 2px 50px 2px 50px 2px 50px 2px 50px;
+        row-gap: 5px;
+    }
+
+    /* Nome */
+    .menuInfo .name {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfo .name>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Gênero */
+    .menuInfo .gender {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfo .gender>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Data de Nascimento */
+    .menuInfo .date {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 180px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfo .date>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Endereço */
+    .menuInfo .address {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfo .address>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Botão Editar */
+    .menuInfo .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuInfo .button>a {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e8d39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuInfo .button p {
+        font-weight: 600;
+    }
+
+    /* Info Editar */
+    .menuInfoEdit>.container {
+        display: grid;
+        grid-template-rows: 50px 2px 50px 2px 50px 2px auto 2px 50px;
+        row-gap: 5px;
+    }
+
+    /* Nome */
+    .menuInfoEdit .name {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 75px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfoEdit .name>p:first-child {
+        grid-column: 2;
+    }
+
+    .menuInfoEdit .name>div {
+        height: 100%;
+        border-radius: 15px;
+        background: #ddd;
+        display: grid;
+        grid-template-columns: 15px 1fr 15px;
+        align-items: center;
+    }
+
+    .menuInfoEdit .name>div>input {
+        grid-column: 2;
+        height: 90%;
+        border: none;
+        background: #ddd;
+    }
+
+    /* Gênero */
+    .menuInfoEdit .gender {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfoEdit .gender>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Data de Nascimento */
+    .menuInfoEdit .date {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 180px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfoEdit .date>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Endereço */
+    .menuInfoEdit .address {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuInfoEdit .address>p:first-child {
+        grid-column: 2;
+    }
+
+    .menuInfoEdit .address>div {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+        column-gap: 15px;
+        row-gap: 10px;
+        align-items: center;
+    }
+
+    .menuInfoEdit .address>div>div {
+        height: 100%;
+        border-radius: 15px;
+        background: #ddd;
+        display: grid;
+        grid-template-columns: 15px 1fr 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuInfoEdit .address div>input {
+        grid-column: 2;
+        height: 90%;
+        border: none;
+        background: #ddd;
+    }
+
+    /* Botão Editar */
+    .menuInfoEdit .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuInfoEdit .button>a {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e8d39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuInfoEdit .button p {
+        font-weight: 600;
+    }
+
+    /* Segurança */
+    .menuSecurity>.container {
+        display: grid;
+        grid-template-rows: 50px 2px 50px 2px;
+        row-gap: 5px;
+    }
+
+    /* E-mail */
+    .menuSecurity .email {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuSecurity .email>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Senha */
+    .menuSecurity .pass {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 200px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuSecurity .pass>p:first-child {
+        grid-column: 2;
+    }
+
+    .menuSecurity .pass>.button>a {
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e8d39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuSecurity .pass>.button p {
+        font-weight: 600;
+    }
+
+
+    /* Segurança Editar */
+    .menuSecEdit>.container {
+        display: grid;
+        grid-template-rows: 50px 2px auto 2px;
+        row-gap: 5px;
+    }
+
+    /* E-mail */
+    .menuSecEdit .email {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuSecEdit .email>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Senha */
+    .menuSecEdit .pass {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 90px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuSecEdit .pass>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Troca de Senha */
+    .menuSecEdit .pass>div {
+        width: 300px;
+        display: grid;
+        grid-template-rows: 50px 50px 50px 50px;
+        row-gap: 10px;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuSecEdit .pass>div>div:not(.button) {
+        height: 100%;
+        border-radius: 15px;
+        background: #ddd;
+        display: grid;
+        grid-template-columns: 15px 1fr 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuSecEdit input {
+        grid-column: 2;
+        height: 90%;
+        border: none;
+        background: #ddd;
+        text-align: center;
+    }
+
+    .menuSecEdit .pass .button>a {
+        position: relative;
+        left: 50px;
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e8d39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuSecEdit .pass>.button p {
+        font-weight: 600;
+    }
+
+    /* Favoritos */
+    .menuFav>.container {
+        display: grid;
+        grid-template-rows: auto 2px 50px;
+        row-gap: 5px;
+    }
+
+    /* Mercados */
+    .menuFav .market {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 200px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuFav .market>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Botão Editar */
+    .menuFav .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuFav .button>a {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e8d39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuFav .button p {
+        font-weight: 600;
+    }
+
+    /* Favoritos Editar */
+    .menuFavEdit>.container {
+        display: grid;
+        grid-template-rows: auto 2px 50px;
+        row-gap: 5px;
+    }
+
+    /* Mercados */
+    .menuFavEdit .market {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10px 200px 1fr;
+        align-items: center;
+        justify-self: baseline;
+    }
+
+    .menuFavEdit .market>p:first-child {
+        grid-column: 2;
+    }
+
+    /* Lista */
+    .menuFavEdit .market>div>div {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    /* Botão Editar */
+    .menuFavEdit .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuFavEdit .button>a {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e8d39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuFavEdit .button p {
+        font-weight: 600;
+    }
+
+    /* Excluir Conta */
+    .menuDel>.container {
+        display: grid;
+        grid-template-rows: 50px 2px 50px;
+        row-gap: 5px;
+    }
+
+    /* Box de Confirmação */
+    .menuDel .box {
+        width: 100%;
+        border-radius: 15px;
+        background: #ddd;
+        display: grid;
+        grid-template-columns: 15px 1fr 15px;
+    }
+
+    .menuDel .box>input {
+        grid-column: 2;
+        border: none;
+        object-fit: cover;
+        background: #ddd;
+    }
+
+    /* Botão Excluir */
+    .menuDel .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuDel .button>a {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0e8d39;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menuDel .button p {
+        font-weight: 600;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -827,10 +829,23 @@ header {
 }
 
 
-main {
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #6BD489;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
 
+}
 
-align-items: center;
-justify-content: center;
+section#login >div#imagem {
+
+background: grey url(../img/mercado.png);
+background-size: cover;
+height: 250px;
+
 
 }
