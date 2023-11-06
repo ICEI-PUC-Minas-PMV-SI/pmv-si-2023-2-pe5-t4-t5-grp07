@@ -39,6 +39,12 @@ p#semiBold {
     font-weight: 600;
 }
 
+p#marca {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
 /* Cabeçalho */
 header {
     position: absolute;
@@ -46,7 +52,7 @@ header {
     height: 100px;
     background: #6BD489;
     display: grid;
-    grid-template-columns: 90px 2px 1fr 2px auto 2px auto 2px 210px;
+    grid-template-columns: 90px auto 800px 2px auto 2px auto 2px 210px;
     column-gap: 20px;
 }
 
@@ -73,11 +79,17 @@ header {
         border-radius: 50%;
     }
 
+    .marca {
+        display: flex;
+        align-items: center;
+             
+        }
+
     /* Busca */
     .search {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
     }
 
     .search > .container {
