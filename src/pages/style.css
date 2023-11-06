@@ -344,6 +344,12 @@ header {
         width: 98%;
     }
 
+    #mercado {
+        
+        justify-content: left;
+
+    }
+
         /* Informações */
         .menuInfo > .container {
             display: grid;
