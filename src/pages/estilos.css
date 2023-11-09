@@ -1,0 +1,59 @@
+@media screen and (min-width:992px) {
+
+    body {
+
+        background-color: #6BD48989;
+
+    }
+
+    section#login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: white;
+        width: 80vw;
+        height: 300px;
+        border-radius: 20px;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        box-shadow: 0px 0px 10px black;
+        width: 800px;
+    }
+
+    section#login>div#imagem {
+
+        float: left;
+        width: 50%;
+        display: block;
+        background: white url(../img/mercado.jpg);
+        background-size: cover;
+        height: 300px;
+        background-position: left bottom;
+    }
+
+
+    section#login>div#formulario {
+
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    form>input[type=submit] {
+        display: block;
+        font-size: 1em;
+        width: 30%;
+        background-color: #0e8d39;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    form>input[type=submit]:hover {
+
+        background-color: #0c3b1c;
+    }
+
+}
