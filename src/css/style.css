@@ -150,7 +150,6 @@
     .conta {
         display: flex;
         align-items: center;
-
     }
 
     .conta>a {
@@ -186,6 +185,7 @@
     .local>.texto {
         position: relative;
         left: 10px;
+        
     }
 
     /* Corpo */
@@ -853,14 +853,15 @@ section#login>div#formulario {
 
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 195px;
+    margin: 80px;
     align-items: center;
     justify-content: center;
-    width: 800px;
-    height: 410px;
+    width: 40%;
+    height: 50%;
     flex-shrink: 0;
     border-radius: 25px;
     background: #FFF;
+   
 
 }
 
