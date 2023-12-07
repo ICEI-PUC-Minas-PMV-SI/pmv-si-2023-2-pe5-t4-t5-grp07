@@ -924,26 +924,27 @@
 
     /* CARRINHO DE COMPRAS*/
 
-    .carrinho {
+    section {
         display: flex;
+        width: 100%;
     }
 
     .listaitens {
 
         display: flexbox;
         float: left;
-        width: 1000px;
+        width: 50%;
         height: 1000px;
         border: 1px solid;
         border-radius: 10px;
         margin: 50px;
-        
+
     }
 
     .produto-carrinho {
         background: #6BD489;
-        width: 900px;
-        height: 200px;
+        width: 90%;
+        height: 100px;
         align-items: center;
         margin: 10px;
         border-color: #666;
@@ -953,24 +954,26 @@
     }
 
     .item-carrinho>img {
-        width: 200px;
+        width: 100px;
         padding: 10px;
     }
 
     .item-carrinho {
         display: inline-block;
-        
+
     }
+
+
 
     .listamercados {
         display: flexbox;
         float: right;
-       
-        width: 700px;
-        height: 800px;
+        width: 50%;
+        height: 1000px;
         border-radius: 10px;
         margin: 50px;
         border: 1px solid;
+
     }
 
     .mercados {
@@ -979,10 +982,53 @@
         background: #6BD489;
         border-radius: 10px;
         padding: 10px;
+        height: 280px;
+        display: block;
+        
+
+
     }
-}
+
+    .carrinho-mercado {
 
 
-@media screen and (max-width: 1199px) {
-    /* Fazer depois */
-}
+        display: flex;
+        align-items: center;
+        justify-items: end;
+        text-align: justify;
+
+    }
+
+    .carrinho-mercado>img {
+
+        width: 80px;
+        margin-left: 30px;
+     
+
+
+    }
+
+    .carrinho-subtotal {
+
+        display: flex;
+        text-align: justify;
+        margin: 0;
+    }
+
+    .carrinho-frete {
+
+        display: flex;
+        margin: 0;
+    }
+
+    .carrinho-total {
+
+        display: flex;
+        margin: 0;
+
+    }
+
+
+    @media screen and (max-width: 1199px) {
+        /* Fazer depois */
+    }
