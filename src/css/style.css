@@ -892,8 +892,8 @@ section#criaconta>div#formulario {
    
     display: grid;
 
-    margin-top: 195px;
-    width: 800px;
+    margin-top: 60px;
+    width: 48%;
     height: 410px;
     flex-shrink: 0;
     border-radius: 25px;
