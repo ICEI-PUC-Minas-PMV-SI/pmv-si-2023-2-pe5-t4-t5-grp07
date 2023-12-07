@@ -902,6 +902,24 @@ section#criaconta>div#formulario {
 
 }
 
+
+
+.produto-item {
+    width: 350px;
+    height: 350px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    background: white;
+    margin: 10px;
+}
+
+.produto-item > img {
+
+    width: 200px;
+}
+
 }
 
 
