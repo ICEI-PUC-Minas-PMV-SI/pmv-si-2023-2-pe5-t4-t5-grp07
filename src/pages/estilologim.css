@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 45px ;
+    background: #6BD489;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    
+}
+
+.fotocarrinho {
+    display: inline-block;
+    height: 36px;
+    margin: 5px;
+    
+}
+.nome {
+    display: inline-block;
+    color:white;
+    font-size: 25px;  
+    position: absolute;
+    top: 25%;    
+}
+main{
+    width: 60%;
+    height: 650px;
+    float: left;
+}
+main .fotosupermercado{
+    width: 100%;
+    height: 650px;
+
+}
+aside{
+    width: 40%;
+    height: 650px;
+    float: left;
+}
+form{
+    color: white;
+    background-color: #6BD489;
+    width: 350px;
+    height: 300px;
+    margin: 150px auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid 2px grey;
+}
+input{
+    display:block;
+    margin: 10px auto;
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: solid 1px grey;
+
+}
+#enviar{
+    background-color: blue;
+    color: white;
+}
+div.row{
+    margin: 10px auto;
+    text-align: left;
+
+}
+
+form.criarconta{
+    color: white;
+    background-color: #6BD489;
+    width: 350px;
+    height: 250px;
+    margin: 150px auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    border: solid 2px grey;
+}
+    
+input.criarconta{
+    display:block;
+    margin: 10px auto;
+    width: 300px;
+    height: 30px;
+    border-radius: 3px;
+    border: solid 1px grey;
+}
