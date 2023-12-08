@@ -1,4 +1,4 @@
-@media screen and (min-width:992px) {
+/* @media screen and (min-width:992px) { */
 
     /* Base */
     body {
@@ -138,7 +138,10 @@
         text-align: center;
         text-decoration: none;
         border-radius: 20px;
+        
     }
+
+
 
     .cart p {
         position: relative;
@@ -242,6 +245,7 @@
         grid-template-columns: 300px;
         grid-template-rows: 50px 2px 50px 2px 50px 2px 50px;
         row-gap: 5px;
+        
     }
 
     nav>.container a {
@@ -326,9 +330,14 @@
         height: 15px;
     }
 
-    nav #deleteAtivo {
-        background-color: #6BD489;
-    }
+    /* nav #deleteAtivo {
+        background-color: #6BD489; */
+
+        nav > .container > :hover {
+            background-color: #6BD489;
+
+        }
+
 
     /* Main Menu */
     main {
@@ -913,6 +922,9 @@
         justify-content: center;
         background: white;
         margin: 10px;
+        box-shadow: 5px 5px 5px grey;
+        border-radius: 10px;
+        
     }
 
     .produto-item>img {
@@ -1027,8 +1039,8 @@
         margin: 0;
 
     }
-}
+/* }
 
 @media screen and (max-width: 1199px) {
     /* Fazer depois */
-}
+} */
