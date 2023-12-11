@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="../script/login.js"></script>
+
     <script>
         // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login        
         if (!usuarioCorrente.login) {
@@ -33,7 +34,7 @@
         // Associa ao evento de carga da página a função para verificar se o usuário está logado
         window.addEventListener('load', initPage);
     </script>
-    <script src="../script/dbprodutos.js"></script>
+    <script src="../script/dbfake.js"></script>
 </head>
 
 <body>
@@ -283,32 +284,17 @@
 
 
     <script>
-
         var prods = '';
-        for (i = 0; i < db.dados.length; i++) {
+        for (i = 0; i < db_produtos.dados.length; i++) {
 
 
-            prods += ` <p class="produto-item"> <img src="${db.dados[i].imagem}"> <br> ${db.dados[i].descricao} <br> <a href="#" class="btn btn-primary">Comprar</a> </p>`;
+            prods += ` <p class="produto-item"> <img src="${db_produtos.dados[i].imagem}"> <br> ${db_produtos.dados[i].descricao} <br> <a href="#" class="btn btn-primary">Comprar</a> </p>`;
         }
 
         document.getElementById('lista-produtos').innerHTML = prods;
-
-
-        var usuariologado = document.getElementById("usuariologado")
-        var enviarpara = document.getElementById("enviarpara")
-        var usuarioendereco = document.getElementById("usuarioendereco")
-
-        usuariologado.innerHTML = `${usuarioCorrente.nome}`
-        enviarpara.innerHTML = `Enviar para ${usuarioCorrente.nome}`
-        usuarioendereco.innerHTML = `${usuarioCorrente.endereco}`
-
-        if (usuarioCorrente.login == "admin") {
-
-            var minhaconta = document.getElementById("minhaconta")
-            minhaconta.href = "usuarios.html"
-        }
     </script>
 
+    <script src="../script/userdata.js"></script>
 </body>
 
 </html>

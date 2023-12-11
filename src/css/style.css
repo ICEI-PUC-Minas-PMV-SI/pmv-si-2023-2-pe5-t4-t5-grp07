@@ -424,9 +424,10 @@ width: 20px;
     .menuInfo .date {
         width: 100%;
         display: grid;
-        grid-template-columns: 10px 180px 1fr;
+        grid-template-columns: 10px 90px 1fr;
         align-items: center;
         justify-self: baseline;
+        text-align: left;
     }
 
     .menuInfo .date>p:first-child {
