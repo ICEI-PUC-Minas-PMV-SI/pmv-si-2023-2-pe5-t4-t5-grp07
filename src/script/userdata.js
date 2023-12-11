@@ -6,10 +6,13 @@ usuariologado.innerHTML = `${usuarioCorrente.nome}`
 enviarpara.innerHTML = `Enviar para ${usuarioCorrente.nome}`
 usuarioendereco.innerHTML = `${usuarioCorrente.endereco}`
 
-if (usuarioCorrente.login == "admin") {
+if (usuarioCorrente.login != "admin") {
 
-    var minhaconta = document.getElementById("minhaconta")
-    minhaconta.href = "usuarios.html"
+    // var minhaconta = document.getElementById("minhaconta")
+    // minhaconta.href = "usuarios.html"
+
+    document.getElementById('menu_usuarios').style.display = "none";
+
 }
 
 document.getElementById('usuario_login').innerHTML = `${usuarioCorrente.login}`
