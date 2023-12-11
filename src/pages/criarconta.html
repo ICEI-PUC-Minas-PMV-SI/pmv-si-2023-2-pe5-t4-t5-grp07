@@ -8,8 +8,7 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body style="background-color: #6BD48989 ;">
@@ -21,7 +20,7 @@
         </div>
         <div class="marca">
             <p id="marca">Compare Preços</p>
-           
+
     </header>
     <main>
         <section id="criaconta">
@@ -30,41 +29,41 @@
             <div id="formulario">
                 <form class="row md-3">
                     <div class="col-md-6">
-                        <label for="inputname" class="form-label">Nome:</label>
-                        <input type="text" class="form-control" id="inputname">
+                        <label for="inputuser" class="form-label">Usuário:</label>
+                        <input type="text" class="form-control" id="txt_login">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputcidade" class="form-label">Cidade:</label>
-                        <input type="text" class="form-control" id="inputcidade">
+                        <label for="inputcidade" class="form-label">Nome completo:</label>
+                        <input type="text" class="form-control" id="txt_nome">
                     </div>
 
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="text" class="form-control" id="txt_email">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputdate" class="form-label">Data de Nascimento:</label>
-                        <input type="date" class="form-control" id="inputdate">
+                        <label for="inputcidade" class="form-label">Endereço:</label>
+                        <input type="text" class="form-control" id="txt_endereco">
                     </div>
 
-                   
+
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Senha:</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <input type="password" class="form-control" id="txt_senha">
                     </div>
 
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Repita a senha:</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <input type="password" class="form-control" id="txt_senha2">
                     </div>
 
-                    <div class= "col-md-6">
-                        <button type="submit" class="btn btn-primary">Criar Conta</button>
+                    <div class="col-md-6">
+                        <button id="btn_salvar" type="button" class="btn btn-primary">Criar Conta</button>
                     </div>
 
                     <div class="col-md-6">
                         <a class="btn btn-primary" href="login.html" role="button">Já tenho conta</a>
-                        
+
                     </div>
 
                 </form>
@@ -73,6 +72,42 @@
 
 
     </main>
+
+    <script src="../script/login.js"></script>
+
+    <script>
+
+        function salvaLogin(event) {
+            // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+            event.preventDefault();
+
+            // Obtem os dados do formulário
+            let login = document.getElementById('txt_login').value;
+            let nome = document.getElementById('txt_nome').value;
+            let email = document.getElementById('txt_email').value;
+            let endereco = document.getElementById('txt_endereco').value;
+            let senha = document.getElementById('txt_senha').value;
+            let senha2 = document.getElementById('txt_senha2').value;
+
+            if (senha != senha2) {
+                alert('As senhas informadas não conferem.');
+                return
+            }
+
+            // Adiciona o usuário no banco de dados
+            addUser(nome, login, senha, email, endereco);
+            alert('Usuário salvo com sucesso. Proceda com o login para ');
+
+        }
+
+        // Associar salvamento ao botao
+        document.getElementById('btn_salvar').addEventListener('click', salvaLogin);
+
+
+    </script>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

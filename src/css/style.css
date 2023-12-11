@@ -32,6 +32,7 @@
         color: #666;
     }
 
+    
     p#titPag {
         font-size: 32px;
         font-weight: 400;
@@ -54,14 +55,15 @@
         height: 100px;
         background: #6BD489;
         display: grid;
-        grid-template-columns: 5% 25% 35% 2px 8% 2px 8% 2px 8%;
+        grid-template-columns: 5% 20% 30% 10% 12% 12%;
         column-gap: 20px;
-    }
+           }
 
     .verLin {
         margin-top: 15px;
         border-left: 1px solid #444;
         height: 70px;
+        display: none;
     }
 
     /* Home */
@@ -95,7 +97,7 @@
     }
 
     .search>.container {
-        width: 400px;
+        width: 300px;
         height: 50px;
         border-radius: 50px;
         background: #fff;
@@ -177,10 +179,11 @@
         object-fit: cover;
     }
 
-    /* Localização */
+        /* Localização */
     .local {
         display: flex;
         align-items: center;
+
 
 
     }
@@ -189,6 +192,27 @@
         position: relative;
         left: 10px;
 
+    }
+
+    .local > div > img {
+width: 20px;
+
+    }
+
+    p#enviarpara {
+        color: #444;
+        font-size: small;
+    }
+
+    p#usuariologado {
+        color: #444;
+
+    }
+
+
+    p#usuarioendereco {
+        color: #666;
+        font-size: small;
     }
 
     /* Corpo */
