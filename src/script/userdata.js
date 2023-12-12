@@ -5,7 +5,9 @@ let usuarioendereco = document.getElementById("usuarioendereco")
     // usuariologado.innerHTML = `<span class="material-symbols-outlined">
     // manage_accounts
     // </span>${usuarioCorrente.nome}`
-enviarpara.innerHTML = `Enviar para ${usuarioCorrente.nome}`
+
+var primeiroNome = usuarioCorrente.nome.split(' ')[0];
+enviarpara.innerHTML = `Enviar para ${primeiroNome}`
 usuarioendereco.innerHTML = `${usuarioCorrente.endereco}`
 
 if (usuarioCorrente.login != "admin") {

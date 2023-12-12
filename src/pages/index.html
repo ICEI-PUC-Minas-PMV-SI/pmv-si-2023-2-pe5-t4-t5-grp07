@@ -180,7 +180,7 @@
         for (i = 0; i < db_produtos.dados.length; i++) {
 
 
-            prods += ` <p class="produto-item"> <img src="${db_produtos.dados[i].imagem}"> <br> ${db_produtos.dados[i].descricao} <br> <a href="#" onclick="adicionarCarrinho() "class="adicionarcarrinho btn btn-primary">Comprar</a> </p>`;
+            prods += ` <p class="produto-item"> <img src="${db_produtos.dados[i].imagem}"> <br> Código: ${db_produtos.dados[i].codigo} <br> ${db_produtos.dados[i].descricao}  <br> <a id="btncomprar" href="#" onclick="adicionarCarrinho() "class="adicionarcarrinho btn btn-primary">Comprar</a> </p>`;
         }
 
         document.getElementById('lista-produtos').innerHTML = prods;

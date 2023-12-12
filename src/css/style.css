@@ -18,7 +18,7 @@ Grandes telas: acima de 1200px
 
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:992px) {
 
     /* Base */
     body {
@@ -79,7 +79,7 @@ Grandes telas: acima de 1200px
         height: 100px;
         background: #6BD489;
         display: grid;
-        grid-template-columns: 5% 35% 25% 10% 5% 5% 5%;
+        grid-template-columns: 5% 25% 25% 10% 7% 7% 7%;
         column-gap: 20px;
            }
 
@@ -977,23 +977,29 @@ width: 20px;
 
 
     .produto-item {
-        width: 350px;
-        height: 350px;
+        width: 230px;
+        height: 250px;
         float: left;
-        padding: 10px;
+        padding: 5px;
         text-align: center;
         justify-content: center;
         background: white;
-        margin: 10px 15px;
+        margin: 5px;
         box-shadow: 5px 5px 5px grey;
         border-radius: 10px;
-       
-        
-    }
+        font-size: 12px;
+        }
 
+  
     .produto-item>img {
 
-        width: 200px;
+        width: 150px;
+    }
+
+    #btncomprar {
+
+margin-top: 5px;
+
     }
 
 

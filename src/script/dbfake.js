@@ -18,7 +18,7 @@ var db_produtos = {
 
         {
             codigo: '0002',
-            descricao: 'Café Extraforte Fino Grão Pacote 500g',
+            descricao: 'Café Extraforte Fino Grão 500g',
             categoria: 'cafe',
             imagem: '../img/cafe.jpg',
             preco: [
@@ -78,7 +78,7 @@ var db_produtos = {
 
         {
             codigo: '0006',
-            descricao: 'Macarrão Santa Amália Espaguete Nº 8 500g',
+            descricao: 'Macarrão Santa Amália Espaguete 500g',
             categoria: 'massas',
             imagem: '../img/macarrao.webp',
             preco: [
@@ -153,7 +153,7 @@ var db_produtos = {
 
         {
             codigo: '0011',
-            descricao: 'Pão Bisnaguinha Seven Boys Original 300g',
+            descricao: 'Pão Bisnaguinha Seven Boys 300g',
             categoria: 'padaria',
             imagem: '../img/pao.webp',
             preco: [
@@ -168,7 +168,7 @@ var db_produtos = {
 
         {
             codigo: '0012',
-            descricao: 'Molho De Tomate Tradicional Heinz Pouch 300g',
+            descricao: 'Molho De Tomate Tradicional Heinz 300g',
             categoria: 'carnes',
             imagem: '../img/molho.webp',
             preco: [
@@ -183,7 +183,7 @@ var db_produtos = {
 
         {
             codigo: '0013',
-            descricao: 'Leite Longa Vida Porto Alegre Integral 1l',
+            descricao: 'Leite Porto Alegre Integral 1l',
             categoria: 'carnes',
             imagem: '../img/leite.jpg',
             preco: [
@@ -198,7 +198,7 @@ var db_produtos = {
 
         {
             codigo: '0014',
-            descricao: 'Margarina Cremosa Com Sal Qualy 500g',
+            descricao: 'Margarina Qualy 500g',
             categoria: 'carnes',
             imagem: '../img/margarina.webp',
             preco: [
@@ -213,7 +213,7 @@ var db_produtos = {
 
         {
             codigo: '0015',
-            descricao: 'Achocolatado Pó Original Toddy Pote 750g',
+            descricao: 'Achocolatado Toddy Pote 750g',
             categoria: 'carnes',
             imagem: '../img/toddy.webp',
             preco: [
