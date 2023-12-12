@@ -59,7 +59,7 @@
         height: 100px;
         background: #6BD489;
         display: grid;
-        grid-template-columns: 5% 20% 30% 10% 12% 12%;
+        grid-template-columns: 5% 25% 30% 10% 10% 12%;
         column-gap: 20px;
            }
 
@@ -71,6 +71,12 @@
     }
 
     /* Home */
+.home {
+
+width: 70px;
+
+}
+
     .home>.button {
         position: absolute;
         top: 15px;
@@ -88,20 +94,22 @@
     }
 
     .marca {
-        display: grid;
+        display: flex;
         align-items: center;
+
+    
 
     }
 
     /* Busca */
     .search {
-        display: grid;
+        display: flex;
         align-items: center;
 
     }
 
     .search>.container {
-        width: 300px;
+            
         height: 50px;
         border-radius: 50px;
         background: #fff;
@@ -137,7 +145,7 @@
     }
 
     .cart>.button {
-        width: 116px;
+        width: 80px;
         height: 50px;
         background: #0e8d39;
         color: #fff;
@@ -152,7 +160,7 @@
     .cart p {
         position: relative;
         top: 50%;
-        margin-top: -12.5px;
+        margin-top: -15px;
     }
 
     /* Conta */
