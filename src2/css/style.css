@@ -1,0 +1,978 @@
+/* Regras Gerais */
+    /* Regras de Fonte */
+    @font-face {
+        font-family: 'Poppins', sans-serif;
+        src: url(../fontes/Poppins-Regular.woff);
+    }
+
+    /* Textos */
+    #marca {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+    }
+
+    /* Base */
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Cabeçalho Base */
+    header {
+        height: 50px;
+        background-color: #6BD489;
+        display: grid;
+        grid-template-columns: auto 35px 1fr;
+        column-gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home {
+        height: 35px;
+        grid-column: 2;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    /* Cabeçalho 1 */
+    #headerTipo1 {
+        grid-template-columns: auto 35px 1fr;
+    }    
+
+    /* Cabeçalho 2 */
+    #headerTipo2 {
+        grid-template-columns: auto 35px auto 1fr auto 35px auto auto auto 180px auto;
+        grid-template-rows: 50px;
+    }
+
+    .separadorV {
+        height: 35px;
+        border-left: #444 solid 1px;
+    }
+
+    /* Busca */
+    .search {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        max-width: 400px;
+        height: 30px;
+        border-radius: 15px;
+        border: #444 1px solid;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: 30px 1fr 30px;
+        align-items: center;
+    }
+
+    .search img {
+        width: 15px;
+        height: 15px;
+        justify-self: center;
+    }
+
+    .search input {
+        height: 90%;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+    }
+
+    .search input:focus {
+        outline: none;
+    }
+
+    .search input::placeholder {
+        font-style: italic;
+        opacity: 0.5;
+    }
+
+    /* Carrinho */
+    .linkCart {
+        width: 35px;
+        height: 35px;
+        display: flex;
+    }
+
+    /* Conta */
+    .linkConta {
+        width: 100%;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .linkConta a {
+        display: grid;
+        text-decoration: none;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    .linkConta img:first-child {
+        height: 35px;
+    }
+
+    .linkConta img:last-child {
+        height: 5px;
+    }
+
+    /* Local */
+    .local {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: 20px 20px;
+        column-gap: 5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .local img {
+        margin-top: 20px;
+        height: 30px;
+    }
+
+    .local p {
+        color: #666;
+    }
+
+    .local p:last-child {
+        grid-column: 2;
+        grid-row: 2;
+        color: #444;
+    }
+
+    #carregarEndereco {
+        font-size: 11px;
+    }
+
+    /* Corpo 1*/ 
+    #mainTipo1 {
+        height: calc(100vh - 50px);
+        background-color: #D1F3E0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    #mercado {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    } 
+
+    #mercado img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top right;
+    }
+
+    #login {
+        padding: 25px;
+        border-radius: 25px;
+        background-color: #fff;
+    }
+
+    #recuperar {
+        padding: 25px;
+        border-radius: 25px;
+        background-color: #fff;
+    }
+
+    #criandoConta {
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #fff;
+    }
+    
+    #entrar {
+        border: none;
+        border-radius: 10px;
+        background-color: #0E8D39;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    #email {
+        padding: 9px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    #senha {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: #DDDDDD;
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+
+    #esqueci {
+        grid-column: 1;
+        grid-row: 5;
+        font-size: 10px;
+    }
+
+    #criar {
+        grid-column: 3;
+        grid-row: 5;
+        font-size: 10px;
+        justify-self: end;
+    }
+
+    #login #entrar {
+        grid-column: 1 / span 3;
+        grid-row: 7;
+    }
+
+    #recuperar label {
+        font-size: 12px;
+        text-align: center;
+        grid-row: 1;
+    }
+
+    #recuperar input {
+        padding: 9px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        grid-row: 3;
+    }
+
+    #recuperar #entrar {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    #criandoConta input {
+        padding: 5px;
+        border: 1px solid #B2B2B2;
+        border-radius: 10px;
+        font-style: italic;
+    }
+
+    #l05 input {
+        margin: 0px;
+    }
+
+    #l08 button {
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    #l08 button:first-of-type {
+        background-color: #D1F3E0;
+        color: #0E8D39;
+    }
+
+    #l08 button:last-of-type {
+        background-color: #0E8D39;
+        color: #fff;
+    }
+
+     /* Corpo Gerenciamento */
+     #mainGerenciamento {
+        height: calc(100vh - 50px);
+        display: grid;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    #mainGerenciamento hr {
+        width: calc(100% - 30px);
+        border: none;
+        border-top: #000 1px solid;
+    }
+
+    #tituloConfig {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #tituloConfig p,hr {
+        margin: 0px auto;
+        width: 90%;
+        align-self: end;
+    }
+
+    #tituloConfig p {
+        margin-left: 20px;
+    }
+
+    #restoLinha {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    
+    #mainGerenciamento p {
+        margin: 0;
+    }
+
+        /* Navegação */
+        #menuConfigConta{
+            margin: 0 auto;
+            grid-column: 2;
+            grid-row: 2;
+            width: 80%;
+            display: grid;
+            grid-template-columns: auto;
+            row-gap: 5px;
+        }
+
+        #menuConfigConta div {
+            display: grid;
+            grid-template-columns: 5px auto auto 1fr;
+            column-gap: 5px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #menuConfigConta > div > img:first-child {
+            grid-column: 2;
+        }
+
+            /* Main Geral */
+            #preenchimento {
+                grid-column: 3;
+                grid-row: 2;
+            }
+
+            .mainConfigConta {
+                margin: 0 auto;
+                width: 90%;
+                display: grid;
+                grid-template-columns: auto;
+                row-gap: 5px;
+            }
+
+            .container3Colunas {
+                display: grid;
+                grid-template-rows: 100%;
+                column-gap: 10px;
+                align-items: center;
+            }
+
+            .mainConfigConta button {
+                margin: auto;
+                padding: 5px 10px;
+                background-color: #0E8D39;
+                color: #fff;
+                border: none;
+                border-radius: 10px;
+                font-weight: 600;
+            }
+
+            .container3Colunas > p:first-child {
+                grid-column: 2;
+                font-weight: 600;
+            }
+
+            .inputEdit {
+                height: 75%;
+                width: calc(100% - 20px);
+                border: none;
+                background-color: #DDD;
+            }
+
+                /* Main Info Edição */
+                .caixaCinza {
+                    height: 100%;
+                    margin-left: -10px;
+                    padding-left: 10px;
+                    border-radius: 10px;
+                    background-color: #DDD;
+                }
+
+                #nomeEdit:focus {
+                    outline: none;
+                }
+
+                #enderEdit {
+                    display: grid;
+                    row-gap: 5px;
+                }
+
+                .parteEnder {
+                    height: 100%;
+                    grid-column: 3;
+                    display: grid;
+                    align-items: end;
+                }
+
+                /* Main Segurança Edit */
+                #caixaSenha {
+                    display: grid;
+                    row-gap: 5px;
+                }
+
+                #caixaSenha input::placeholder {
+                    color: #B2B2B2;
+                    text-align: center;
+                    font-style: italic;
+                }
+
+                /* Main Fav */
+                #listaFav {
+                    margin: 0;
+                }
+
+                /* Main Favorito Edit */                
+                .container2Linhas {
+                    display: grid;
+                    grid-template-rows: auto 28px;
+                    row-gap: 5px;
+                    text-align: center;
+                }
+
+
+
+@media screen and (min-width: 320px) { /*Celular*/
+   /* Fazer Depois */
+}
+@media screen and (min-width: 481px) { /*Tablet*/
+    /* Fazer Depois */ 
+}
+@media screen and (min-width: 769px) { /*Laptop*/
+    /* Corpo 1 */
+    #login .form {
+        display: grid;
+        grid-template-rows: 30px 10px 30px 5px auto 5px 30px;
+        grid-template-columns: 100px 60px 80px;
+    }
+
+    #recuperar .form {
+        display: grid;
+        grid-template-columns: 240px;
+        grid-template-rows: auto 10px 30px 10px 30px;
+    }
+
+    #criandoConta .form {
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: 320px;
+        row-gap: 5px;
+    }
+
+    #l01, #l02 {
+        display: grid;
+        grid-template-columns: 195px 115px;
+        column-gap: 10px;
+    }
+
+    #l03, #l04, #l06, #l07, #l08 {
+        display: grid;
+        grid-template-columns: 155px 155px;
+        column-gap: 10px;
+    }
+
+    #l05 {
+        display: grid;
+        grid-template-columns: 50px 15px 1fr 15px 1fr 15px 1fr;
+    }
+
+    /* Corpo Gerenciamento */
+    #mainGerenciamento {
+        grid-template-columns: auto 250px 1fr auto;
+        grid-template-rows: 50px 1fr;
+    }
+
+    #tituloConfig {
+        margin-top: 14px;
+        font-size: 24px;
+    }
+
+        /* Navegação */
+        #menuConfigConta{
+            grid-template-rows: 35px 1px 35px 1px 35px 1px 35px;
+        }
+
+        #menuConfigConta div {
+            border-radius: 15px;
+        }
+
+        #menuConfigConta > div > img:first-child {
+            width: 15px;
+        }
+
+        #menuConfigConta > div > img:last-of-type {
+            height: 7px;
+        }
+
+        #menuConfigConta > div > p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+            /* Main Geral */
+            .container3Colunas {
+                grid-template-columns: auto 80px 1fr;
+            }
+
+            #editNomeCompleto {
+                grid-template-columns: auto 80px 1fr 1fr;
+                column-gap: 15px;
+            }
+
+            .mainConfigConta button {
+                font-size: 16px;
+            }
+
+            .mainConfigConta #data {
+                grid-template-columns: auto 170px 1fr;
+            }
+
+            .container3Colunas > p:first-child {
+                font-size: 16px;
+            }
+
+            .container3Colunas p{
+                font-size: 14px;
+            }
+
+                /* Main Info */
+                .mainConfigConta {
+                    grid-template-rows: 26px 1px 26px 1px 26px 1px auto 1px 26px;
+                }
+
+                /* Main Info Edição */
+                #infoEdit {
+                    grid-template-rows: 26px 1px 181px 1px 26px;
+                }
+                
+                #enderEdit {
+                    grid-template-rows: 26px 26px 26px 26px 26px 26px;
+                }
+                
+                .parteEnder {
+                    grid-template-columns: 135px auto;
+                }
+
+                /* Main Segurança */
+                #sec {
+                    grid-template-rows: 26px 1px 31px 1px;
+                }
+
+                #parteSenha {
+                    grid-template-columns: auto 80px 80px 110px 1fr;
+                }
+
+                /* Main Segurança Edit */
+                #secEdit {
+                    grid-template-rows: 26px 1px 119px 1px;
+                }
+
+                #caixaSenha {
+                    grid-template-columns: 150px;
+                    grid-template-rows: 26px 26px 26px 26px;
+                }
+
+                #caixaSenha input::placeholder {
+                    font-size: 12px;
+                }
+
+                /* Main Fav */
+                #fav {
+                    grid-template-rows: auto 1px 26px 1fr;
+                }
+
+                /* Main Favorito Edit */
+                #favEdit {
+                    grid-template-rows: auto 1px 26px 1fr;
+                }
+
+                /* Main Favorito Edit */
+                #del {
+                    grid-template-rows: auto 1px 26px 1fr;
+                }
+
+                .container2Linhas {
+                    grid-template-rows: auto 26px;
+                }
+
+                .container2Linhas > p:first-child {
+                    font-size: 12px;
+                }
+
+        /* Nav */
+        /* font 16px peso 600 */
+        /* Menus */
+        /* texto font 14px */
+        /* botao font 16px peso 600 */
+
+}
+@media screen and (min-width: 1025px) { /*Desktop*/
+    /* Corpo 1 */
+    #login .form {
+        display: grid;
+        grid-template-rows: 40px 10px 40px 5px auto 5px 40px;
+        grid-template-columns: 100px 100px 100px;
+    }
+
+    #entrar {
+        padding-top: 5px;
+    }
+
+    #recuperar .form {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: auto 10px 40px 10px 40px;
+    }
+
+    #criandoConta .form {
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: 400px;
+        row-gap: 5px;
+    }
+
+    #l01, #l02 {
+        display: grid;
+        grid-template-columns: 245px 145px;
+        column-gap: 10px;
+    }
+
+    #l03, #l04, #l06, #l07, #l08 {
+        display: grid;
+        grid-template-columns: 195px 195px;
+        column-gap: 10px;
+    }
+
+    #l05 {
+        display: grid;
+        grid-template-columns: 50px 15px 70px 15px 70px 15px 70px;
+    }
+
+    #l02, #l04, #l07, #l08 {
+        height: 40px;
+    }
+
+    #l08 button {
+        padding-top: 7.5px;
+    }
+
+    /* Corpo Gerenciamento */
+    #mainGerenciamento {
+        grid-template-columns: auto 300px 1fr auto;
+        grid-template-rows: 60px 1fr;
+    }
+
+    #tituloConfig {
+        margin-top: 17px;
+        font-size: 28px;
+    }
+
+        /* Navegação */
+        #menuConfigConta{
+            grid-template-rows: 40px 1px 40px 1px 40px 1px 40px;
+        }
+
+        #menuConfigConta div {
+            border-radius: 17px;
+        }
+
+        #menuConfigConta > div > img:first-child {
+            width: 18px;
+        }
+
+        #menuConfigConta > div > img:last-of-type {
+            height: 10px;
+        }
+
+        #menuConfigConta > div > p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+            /* Main Geral */
+            .container3Colunas {
+                grid-template-columns: auto 100px 1fr;
+            }
+
+            .mainConfigConta button {
+                font-size: 18px;
+            }
+
+            .mainConfigConta #data {
+                grid-template-columns: auto 200px 1fr;
+            }
+
+            .container3Colunas > p:first-child {
+                font-size: 18px;
+            }
+
+            .container3Colunas p{
+                font-size: 16px;
+            }
+
+                /* Main Info */
+                .mainConfigConta {
+                    grid-template-rows: 28px 1px 28px 1px 28px 1px auto 1px 28px;
+                }
+
+                /* Main Info Edição */
+                #infoEdit {
+                    grid-template-rows: 28px 1px 193px 1px 28px;
+                }
+                
+                #enderEdit {
+                    grid-template-rows: 28px 28px 28px 28px 28px 28px;
+                }
+                
+                .parteEnder {
+                    grid-template-columns: 135px auto;
+                }
+
+                /* Main Segurança */
+                #sec {
+                    grid-template-rows: 28px 1px 33px 1px;
+                }
+
+                #parteSenha {
+                    grid-template-columns: auto 80px 80px 125px 1fr;
+                }
+                
+                /* Main Segurança Edit */
+                #secEdit {
+                    grid-template-rows: 28px 1px 127px 1px;
+                }
+
+                #caixaSenha {
+                    grid-template-columns: 175px;
+                    grid-template-rows: 28px 28px 28px 28px;
+                }
+
+                #caixaSenha input::placeholder {
+                    font-size: 14px;
+                }
+
+                /* Main Fav */
+                #fav {
+                    grid-template-rows: auto 1px 28px 1fr;
+                }
+
+                /* Main Favorito Edit */
+                #favEdit {
+                    grid-template-rows: auto 1px 28px 1fr;
+                }
+
+                /* Main Favorito Edit */
+                #del {
+                    grid-template-rows: auto 1px 28px 1fr;
+                }
+
+                .container2Linhas {
+                    grid-template-rows: auto 28px;
+                }
+                
+                .container2Linhas > p:first-child {
+                    font-size: 16px;
+                }
+
+        /* Nav */
+        /* tamanho 28 */
+        /* font 18px peso 600 */
+        /* Menus */
+        /* texto font 16px */
+        /* botao font 18px peso 600 */
+
+}
+@media screen and (min-width: 1201px) { /*TV*/
+    /* Corpo 1 */
+    #login .form {
+        display: grid;
+        grid-template-rows: 50px 10px 50px 5px auto 5px 50px;
+        grid-template-columns: 150px 150px 150px;
+    }
+
+    #entrar {
+        padding-top: 10px;
+    }
+
+    #recuperar .form {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: auto 10px 50px 10px 50px;
+    }
+
+    #criandoConta .form {
+        display: grid;
+        font-size: 14px;
+        grid-template-columns: 500px;
+        row-gap: 5px;
+    }
+
+    #l01, #l02 {
+        display: grid;
+        grid-template-columns: 310px 1fr;
+        column-gap: 10px;
+    }
+
+    #l03, #l04, #l06, #l07, #l08 {
+        display: grid;
+        grid-template-columns: 245px 245px;
+        column-gap: 10px;
+    }
+
+    #l05 {
+        display: grid;
+        grid-template-columns: 70px 15px 90px 15px 90px 15px 90px;
+    }
+
+    #l02, #l04, #l07, #l08 {
+        height: 40px;
+    }
+
+    #l08 button {
+        padding-top: 5px;
+        font-size: 18px;
+    }
+
+    /* Corpo Gerenciamento */
+    #mainGerenciamento {
+        grid-template-columns: auto 350px 1fr auto;
+        grid-template-rows: 70px 1fr;
+    }
+
+    #tituloConfig {
+        margin-top: 21px;
+        font-size: 32px;
+    }
+
+        /* Navegação */
+        #menuConfigConta{
+            grid-template-rows: 50px 1px 50px 1px 50px 1px 50px;
+        }
+
+        #menuConfigConta div {
+            border-radius: 20px;
+        }
+
+        #menuConfigConta > div > img:first-child {
+            width: 20px;
+        }
+
+        #menuConfigConta > div > img:last-of-type {
+            height: 12px;
+        }
+
+        #menuConfigConta > div > p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+            /* Main Geral */
+            .container3Colunas {
+                grid-template-columns: auto 100px 1fr;
+            }
+
+            .mainConfigConta button {
+                font-size: 20px;
+            }
+
+            .mainConfigConta #data {
+                grid-template-columns: auto 220px 1fr;
+            }
+
+            .container3Colunas > p:first-child {
+                font-size: 20px;
+            }
+
+            .container3Colunas p{
+                font-size: 18px;
+            }
+
+                /* Main Info */
+                .mainConfigConta {
+                    grid-template-rows: 31px 1px 31px 1px 31px 1px auto 1px 31px;
+                }
+
+                /* Main Info Edição */
+                #infoEdit {
+                    grid-template-rows: 31px 1px 211px 1px 31px;
+                }
+                
+                #enderEdit {
+                    grid-template-rows: 31px 31px 31px 31px 31px 31px;
+                }
+                
+                .parteEnder {
+                    grid-template-columns: 150px auto;
+                }
+
+                /* Main Segurança */
+                #sec {
+                    grid-template-rows: 31px 1px 36px 1px;
+                }
+
+                #parteSenha {
+                    grid-template-columns: auto 80px 80px 180px 1fr;
+                }
+
+                /* Main Segurança Edit */
+                #secEdit {
+                    grid-template-rows: 31px 1px 139px 1px;
+                }
+
+                #caixaSenha {
+                    grid-template-columns: 225px;
+                    grid-template-rows: 31px 31px 31px 31px;
+                }
+
+                #caixaSenha input::placeholder {
+                    font-size: 16px;
+                }
+
+                /* Main Favorito */
+                #fav {
+                    grid-template-rows: auto 1px 31px 1fr;
+                }
+
+                /* Main Favorito Edit */
+                #favEdit {
+                    grid-template-rows: auto 1px 31px 1fr;
+                }
+
+                #listaFav select {
+                    margin: 7px 10px;
+                }
+
+                /* Main Favorito Edit */
+                #del {
+                    grid-template-rows: auto 1px 31px 1fr;
+                }
+
+                .container2Linhas {
+                    grid-template-rows: auto 31px;
+                }
+                
+                .container2Linhas > p:first-child {
+                    font-size: 18px;
+                }
+
+        /* Nav */
+        /* tamanho 31 */
+        /* font 20px peso 600 */
+        /* Menus */
+        /* texto font 18px */
+        /* botao font 20px peso 600 */
+
+}
