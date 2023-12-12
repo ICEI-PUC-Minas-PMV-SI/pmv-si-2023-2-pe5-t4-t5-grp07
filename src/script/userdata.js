@@ -22,5 +22,4 @@ document.getElementById('usuario_nome').innerHTML = `${usuarioCorrente.nome}`
 document.getElementById('usuario_email').innerHTML = `${usuarioCorrente.email}`
 document.getElementById('usuario_endereco').innerHTML = `${usuarioCorrente.endereco}`
 
-document.getElementById('editar_email').innerHTML = `${usuarioCorrente.email}`
-document.getElementById('editar_senha').innerHTML = `${usuarioCorrente.senha}`
+
