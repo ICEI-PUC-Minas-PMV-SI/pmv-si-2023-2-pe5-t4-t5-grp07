@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Preços</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="..\css\style.css">
+</head>
+<body>
+    <header id="headerTipo1">
+        <div class="home">
+            <img class="logo" src="..\img\logo.png" alt="Erro" >
+        </div>
+        <div>
+            <p id="marca">Compare Preços</p>
+        </div>
+    </header>
+    <main id="mainTipo1">
+        <div id="mercado">
+            <img src="..\img\mercado.png" alt="Erro">
+        </div>
+        <div id="criandoConta">
+            <div class="form">
+                <div id="l01">
+                    <label for="email">Email:</label>
+                    <label for="dataNasc">Nascimento:</label>
+                </div>
+                <div id="l02">
+                    <input id="vEmail" type="email"placeholder="E-mail" name="email" required>
+                    <input id="vData" type="date"name="dataNasc" min="01-12-2005" required>
+                </div>
+                <div id="l03">
+                    <label for="nome">Nome:</label>
+                    <label for="sobrenome">Sobrenome:</label>
+                </div>
+                <div id="l04">
+                    <input id="vNome" type="text" name="nome"required>
+                    <input id="vSobrenome" type="text"name="sobrenome" required>
+                </div>
+                <div id="l05">
+                    <label for="genero">Gênero:</label>
+                    <input id="masculino"type="radio" name="genero"value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input id="feminino"type="radio" name="genero"value="feminino">
+                    <label for="feminino">Feminino</label>
+                    <input id="naoBin" type="radio"name="genero" value="naoBin">
+                    <label for="naoBin">Não Binário</label>
+                    
+                </div>
+                <div id="l06">
+                    <label for="senha">Senha:</label>
+                </div>
+                <div id="l07">
+                    <input id="senha1" type="password"placeholder="Senha" name="senha" minlength="8"  required>
+                    <input id="senha2" type="password"placeholder="Repita a senha"name="repetirSenha" required>
+                </div>
+                <div id="l08">
+                    <button onclick="window.location.href = '01aLogin.html'">Já Tenho conta</button>
+                    <button onclick="criarConta()">Criar Conta</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
