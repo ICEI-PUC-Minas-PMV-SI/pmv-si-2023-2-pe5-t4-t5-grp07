@@ -19,6 +19,10 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    a, button {
+        cursor: pointer;
+    }
+
     /* Cabeçalho Base */
     header {
         height: 50px;
@@ -628,7 +632,7 @@
     }
 
     #entrar {
-        padding-top: 5px;
+        font-size: 26px;
     }
 
     #recuperar .form {
@@ -666,7 +670,7 @@
     }
 
     #l08 button {
-        padding-top: 7.5px;
+        font-size: 20px;
     }
 
     /* Corpo Gerenciamento */
@@ -804,7 +808,7 @@
     }
 
     #entrar {
-        padding-top: 10px;
+        font-size: 30px;
     }
 
     #recuperar .form {
@@ -842,8 +846,7 @@
     }
 
     #l08 button {
-        padding-top: 5px;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     /* Corpo Gerenciamento */

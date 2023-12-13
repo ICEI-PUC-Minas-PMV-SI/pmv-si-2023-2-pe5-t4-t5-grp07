@@ -17,21 +17,25 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
-        // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login        
-        if (!usuarioCorrente.login) {
+        // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login   
+        let verificaLogin = sessionStorage.getItem('contaLogada');     
+        if (verificaLogin === null) {
             window.location.href = LOGIN_URL;
         }
 
         function initPage() {
 
             // Associa a função de logout ao botão
-            document.getElementById('logout').addEventListener('click', logoutUser);
+            // document.getElementById('logout').addEventListener('click', logoutUser);
+
+            //Puxa dados do sessionStorage da conta logada
+            let logado = JSON.parse(sessionStorage.getItem('contaLogada'));
 
             // Informa o nome do usuário logado
-            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+            //document.getElementById('nomeUsuario').innerHTML = logado.nome;
 
             // Lista os usuários 
-            exibeUsuarios();
+            //exibeUsuarios();
         }
 
         // Associa ao evento de carga da página a função para verificar se o usuário está logado
@@ -95,7 +99,7 @@
             </a> -->
 
             <div class="cart"> <!-- Carrinho -->
-                <a class="button" href="informacao.html">
+                <a class="button" href="gerenciamento.html">
                     <p id="cart"> <span class="material-symbols-outlined">
                             person
                         </span></p>
@@ -116,8 +120,8 @@
             </a>
         </div>
         <div class="cart"> <!-- Carrinho -->
-            <a class="button" href="">
-                <p onclick="logoutUser ()" id="cart"><span class="material-symbols-outlined">
+            <a onclick="deslogar()" class="button" href="">
+                <p  id="cart"><span class="material-symbols-outlined">
                         logout
                     </span></p>
             </a>
@@ -128,8 +132,6 @@
 
 
     <main>
-
-
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -161,12 +163,12 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-
     </main>
 
     <section>
-        <div id="lista-produtos"> </div>
+        <div id="lista-produtos">
+            
+        </div>
     </section>
 
     <footer>
@@ -176,18 +178,56 @@
     </footer>
 
     <script>
+        let tamanhoProdutos = 210*(Math.trunc((screen.width)/210));
+        let carrinho = JSON.parse(sessionStorage.getItem('carrinho'));
+
+        document.getElementById('lista-produtos').style.width = `${tamanhoProdutos}px`;
+
         var prods = '';
         for (i = 0; i < db_produtos.dados.length; i++) {
+            prods += `<div class="produto-item">
+                <img src="${db_produtos.dados[i].imagem}"> 
+                <p>${db_produtos.dados[i].descricao}</p>
+                <input id="${db_produtos.dados[i].codigo}" class="btncomprar btn btn-primary" type="number" value="${carrinho[db_produtos.dados[i].codigo-1].qtd}" min="0"> 
+            </div>`;
 
+            let item = {codigo:db_produtos.dados[i].codigo,qtd:carrinho[db_produtos.dados[i].codigo-1].qtd};
 
-            prods += ` <p class="produto-item"> <img src="${db_produtos.dados[i].imagem}"> <br> Código: ${db_produtos.dados[i].codigo} <br> ${db_produtos.dados[i].descricao}  <br> <a id="btncomprar" href="#" onclick="adicionarCarrinho() "class="adicionarcarrinho btn btn-primary">Comprar</a> </p>`;
+            carrinho[i] = item;
         }
 
+        sessionStorage.setItem('carrinho', JSON.stringify(carrinho));
+
         document.getElementById('lista-produtos').innerHTML = prods;
+
+        let todosInputs = document.querySelectorAll('.btncomprar');
+        let qtd = 0;
+
+        todosInputs.forEach(function (input) {
+            input.addEventListener('input', function(){
+                let item = {
+                    codigo: input.id,
+                    qtd: input.value
+                };
+                salvarUnidades(item);
+                console.log('saiu')
+            })
+        });
+
+        function salvarUnidades(item){
+            for(i=0; i<Object.keys(carrinho).length;i++){
+                if(item.codigo === carrinho[i].codigo){
+                    carrinho[i].qtd = item.qtd;
+                };
+            };
+            
+            sessionStorage.setItem('carrinho', JSON.stringify(carrinho));
+        }
+                
     </script>
     <script src="../script/userdata.js"></script>
-
     <script src="../script/carrinho.js"></script>
+    <script src="../script/js.js"></script>
 </body>
 
 </html>

@@ -18,7 +18,7 @@ function start() {
     popularContas();
   }
 
-  return document.getElementById('botao').innerHTML = '<a id="botao" href="01aLogin.html" style="background-color: #6BD489; text-decoration: none; color: black; padding: 10px; border-radius: 15px;">Prosseguir</a>';
+  return document.getElementById('botao').innerHTML = '<a id="botao" href="login.html" style="background-color: #6BD489; text-decoration: none; color: black; padding: 10px; border-radius: 15px;">Prosseguir</a>';
 }
 
 function popularContas() {
@@ -170,6 +170,17 @@ function criarConta() {
   for (i=0; i< genero.length; i++) {
     if (genero[i].checked) {
       vGenero = genero[i].value;
+      switch (vGenero) {
+        case 'masculino':
+          vGenero = 'Masculino';
+          break;
+        case 'feminino' :
+          vGenero = 'Feminino';
+          break;
+        case 'naoBin':
+          vGenero = 'Não Binário';
+          break;
+      }
     }
   }
 
@@ -218,8 +229,10 @@ function criarConta() {
 
   listaDeContas.push(objeto);
   localStorage.setItem('listaDeContas', JSON.stringify( listaDeContas));
+
+  sessionStorage.setItem('contaLogada', JSON.stringify(objeto));
   
-  return window.location.href = '02Pesquisa.html';
+  return window.location.href = 'index.html';
 };
 
 function login() {
@@ -231,7 +244,18 @@ function login() {
     if (email === listaDeContas[i].email) {
       if (senha === listaDeContas[i].senha) {
         sessionStorage.setItem('contaLogada',JSON.stringify(listaDeContas[i]));
-        return window.location.href = '02Pesquisa.html';
+
+        let carrinho = {};
+
+        for (i = 0; i < db_produtos.dados.length; i++) {
+          let item = {codigo:db_produtos.dados[i].codigo,qtd:0};
+
+            carrinho[i] = item;
+        }
+
+        sessionStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+        return window.location.href = 'index.html';
       }
     }
   }
@@ -306,18 +330,21 @@ function editConta(parte) {
       break;
     case 'Del' :
       let outros;
-      let escrito = document.getElementById('confirmDeleteConta').value;
+      let escrito = document.getElementById('confirmDeleteConta').value.toLowerCase();
       let valor = 'desejo excluir a minha conta';
-
-      escrito.toLowerCase;
 
       if (escrito === valor) {
         listaDeContas.splice(novoObjeto.id,1);
+
         for (i=novoObjeto.id; i<listaDeContas.length;i++){
           outros = listaDeContas[i];
           outros.id = outros.id - 1;
         }
-        return window.location.href = "01aLogin.html";
+
+        localStorage.setItem('listaDeContas', JSON.stringify(listaDeContas));
+        sessionStorage.removeItem('contaLogada');
+
+        return window.location.href = "login.html";
       } else {
         alert('Digite a frase de confirmação.');
       }
@@ -337,4 +364,82 @@ function carregarEndereco() {
   let conta = JSON.parse(sessionStorage.getItem('contaLogada'));
 
   document.getElementById('carregarEndereco').innerHTML = conta.endereco.logradouro;
+}
+
+function deslogar() {
+  sessionStorage.removeItem('contaLogada');
+  sessionStorage.removeItem('carrinho');
+  return window.location.href = 'login.html';
+}
+
+function pagLogin(parametro) {
+  switch (parametro){
+    case 'esqueci':
+      document.getElementById('containerLogin').innerHTML = `<div id="recuperar">
+        <div class="form">
+          <label for="email">Insira seu e-mail para recuperar sua senha.</label>
+          <input id="recuperarEmail" type="email" placeholder="E-mail" name="email" required>
+          <a onclick="recuperar()" id="entrar">Enviar</a>
+        </div>
+      </div>`;
+      break;
+    case 'criar':
+      document.getElementById('containerLogin').innerHTML = `<div id="criandoConta">
+        <div class="form">
+          <div id="l01">
+            <label for="email">Email:</label>
+            <label for="dataNasc">Nascimento:</label>
+          </div>
+          <div id="l02">
+            <input id="vEmail"type="email"placeholder="E-mail" name="email"required>
+            <input id="vData" type="date"name="dataNasc" required>
+          </div>
+          <div id="l03">
+            <label for="nome">Nome:</label>
+            <label for="sobrenome">Sobrenome:</label>
+          </div>
+          <div id="l04">
+            <input id="vNome" type="text" name="nome"required>
+            <input id="vSobrenome" type="text"name="sobrenome" required>
+          </div>
+          <div id="l05">
+            <label for="genero">Gênero:</label>
+            <input id="masculino"type="radio"name="genero"value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input id="feminino"type="radio"name="genero"value="feminino">
+            <label for="feminino">Feminino</label>
+            <input id="naoBin" type="radio"name="genero"value="naoBin">
+            <label for="naoBin">Não Binário</label>  
+          </div>
+          <div id="l06">
+              <label for="senha">Senha:</label>
+          </div>
+          <div id="l07">
+            <input id="senha1"type="password"placeholder="Senha" name="senha"minlength="8"  required>
+            <input id="senha2" type="password"placeholder="Repita a senha"name="repetirSenha" required>
+          </div>
+          <div id="l08">
+            <button onclick="pagLogin()">Já Tenho conta</button>
+            <button onclick="criarConta()">Criar Conta</button>
+          </div>
+        </div>
+      </div>`;
+      break;
+    default:
+      document.getElementById('containerLogin').innerHTML = `<div id="login">
+        <div class="form">
+          <input id="email" type="email" placeholder="E-mail" name="email" required>
+          <input id="senha" type="password" placeholder="Senha" name="senha" required>
+          <a onclick="pagLogin('esqueci')" id="esqueci">Esqueci a Senha</a>
+          <a onclick="pagLogin('criar')" id="criar">Criar Conta</a>
+          <button onclick="login()" id="entrar">Sign In</button>
+        </div>
+      </div>`;
+      break;
+  }
+}
+
+function recuperar() {
+  alert('E-mail de recuperação enviado para: '+document.getElementById('recuperarEmail').value);
+  return pagLogin();
 }

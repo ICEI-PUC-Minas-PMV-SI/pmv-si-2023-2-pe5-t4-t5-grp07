@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Preços</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <script>
+        let verificaLogin = sessionStorage.getItem('contaLogada');     
+        if (verificaLogin === null) {
+            window.location.href = 'login.html';
+        }
+    </script>
 </head>
 <body onload="carregarEndereco()">
     <header  id="headerTipo2">
         <div class="home">
-            <a href="02Pesquisa.html">
+            <a href="index.html">
                 <img class="logo" src="..\img\logo.png" alt="Erro" >
             </a>
         </div>
@@ -21,11 +27,11 @@
         </div>
         <div class="separadorV"></div>
         <div>
-            <a class="linkCart" href="03Comparador.html"><img src="..\img\cart.png" alt=""></a>
+            <a class="linkCart" href="carrinho.html"><img src="..\img\cart.png" alt=""></a>
         </div>
         <div class="separadorV"></div>
         <div class="linkConta">
-            <a href="04Gerenciamento.html">
+            <a onclick="deslogar()">
                 <img src="../img/user.png" alt="erro">
                 <img src="../img/seta.png" alt="erro">
             </a>
@@ -70,7 +76,6 @@
         </nav>
         <div id="preenchimento"></div>
     </div>
-    <script src="../javascript/script.js"></script>
+    <script src="../script/js.js"></script>
 </body>
 </html>
-

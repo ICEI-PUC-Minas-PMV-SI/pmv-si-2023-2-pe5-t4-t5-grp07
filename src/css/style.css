@@ -74,7 +74,8 @@ Grandes telas: acima de 1200px
 
     /* Cabeçalho */
     header {
-        position: top;
+        position: fixed;
+        z-index: 7;
         width: 100%;
         height: 100px;
         background: #6BD489;
@@ -403,6 +404,7 @@ width: 20px;
 
     /* Main Menu */
     main {
+        padding-top: 100px;
         grid-column: 4;
         grid-row: 2;
         overflow-x: hidden;
@@ -975,10 +977,16 @@ width: 20px;
     }
 
 
+    #lista-produtos{
+        margin: 0 auto;
+    }
 
-    .produto-item {
-        width: 230px;
-        height: 250px;
+    .produto-item {  
+        width: 200px;
+        height: 275px;
+        display: grid;
+        grid-template-rows: 150px 1fr 41px;
+        row-gap: 5px;
         float: left;
         padding: 5px;
         text-align: center;
@@ -988,20 +996,29 @@ width: 20px;
         box-shadow: 5px 5px 5px grey;
         border-radius: 10px;
         font-size: 12px;
-        }
+    }
 
-  
-    .produto-item>img {
-
+    .produto-item > p {
+        margin: auto;
+        font-size: 14px;
+    }
+    
+    .produto-item > img {
+        margin: 0 auto;
         width: 150px;
     }
 
-    #btncomprar {
-
-margin-top: 5px;
-
+    .btncomprar {
+        margin: 0 auto;
+        width: 50%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
     }
 
+    .btncomprar::-webkit-inner-spin-button, .btncomprar::-webkit-outer-spin-button {
+        opacity: 1;
+    }
 
 
     /* CARRINHO DE COMPRAS*/
