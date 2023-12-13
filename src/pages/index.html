@@ -209,11 +209,12 @@ shopping_cart
                 if(val.quantidade > 0) {
                 containerCarrinho.innerHTML += ` 
 
-            <p>`+val.descricao+` | quantidade: `+val.quantidade+` | Sup 1: `+val.preco.supermercado1+` </p>
+            <p>`+val.descricao+` | quantidade: `+val.quantidade+`</p>
             
                 `;
             }
             })
+    
         }
         var links = document.getElementsByClassName('addToCart');
 
@@ -221,15 +222,16 @@ shopping_cart
             links[i].addEventListener("click", function () {
                 let key = this.getAttribute('key');
                 items[key].quantidade++;
-                items[key].preco.supermercado1++;
-                atualizarCarrinho();
+                          atualizarCarrinho();
                 return false;
             })
-
-            console.log(items)
-
-            
+         
+           
         }
+
+        console.log(links)
+
+        
         
 
 

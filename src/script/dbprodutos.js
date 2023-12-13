@@ -8,7 +8,7 @@ const items = [
         quantidade: "0",
         preco: [
             {
-                supermercado1: '2',
+                supermercado1: '11.50',
                 supermercado2: '12.50',
                 supermercado3: '10.30'
             }
