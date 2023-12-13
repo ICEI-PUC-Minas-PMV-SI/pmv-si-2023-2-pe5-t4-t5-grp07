@@ -6,6 +6,7 @@ var db_produtos = {
             descricao: 'Ovos Branco Perfa 20 Un',
             categoria: 'carnes',
             imagem: '../img/ovo.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '11.98',
@@ -21,6 +22,7 @@ var db_produtos = {
             descricao: 'Café Extraforte Fino Grão 500g',
             categoria: 'cafe',
             imagem: '../img/cafe.jpg',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '13.98',
@@ -36,6 +38,7 @@ var db_produtos = {
             descricao: 'Salgadinho Doritos Queijo Nacho 140g',
             categoria: 'petiscos',
             imagem: '../img/doritos.jpg',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '9.98',
@@ -51,6 +54,7 @@ var db_produtos = {
             descricao: 'Cerveja Itaipava Latão 473ml',
             categoria: 'bebidas',
             imagem: '../img/cerveja.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '2.99',
@@ -66,6 +70,7 @@ var db_produtos = {
             descricao: 'Biscoito Danix Recheado Morango 130g',
             categoria: 'biscoitos',
             imagem: '../img/biscoito.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '2.48',
@@ -81,6 +86,7 @@ var db_produtos = {
             descricao: 'Macarrão Santa Amália Espaguete 500g',
             categoria: 'massas',
             imagem: '../img/macarrao.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '3.98',
@@ -96,6 +102,7 @@ var db_produtos = {
             descricao: 'Leite Condensado Itambé Carto 395g',
             categoria: 'carnes',
             imagem: '../img/leitecondensado.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '4.98',
@@ -111,6 +118,7 @@ var db_produtos = {
             descricao: 'Lava Roupas Em Pó Omo 1.6kg',
             categoria: 'limpeza',
             imagem: '../img/omo.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '19.98',
@@ -126,6 +134,7 @@ var db_produtos = {
             descricao: 'Óleo Sinhá Girassol Pet 900ml',
             categoria: 'carnes',
             imagem: '../img/oleo.jpg',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '8.98',
@@ -141,6 +150,7 @@ var db_produtos = {
             descricao: 'Refrigerante Fanta Laranja 2l',
             categoria: 'bebidas',
             imagem: '../img/fanta.jpg',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '6.79',
@@ -156,6 +166,7 @@ var db_produtos = {
             descricao: 'Pão Bisnaguinha Seven Boys 300g',
             categoria: 'padaria',
             imagem: '../img/pao.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '6.39',
@@ -171,6 +182,7 @@ var db_produtos = {
             descricao: 'Molho De Tomate Tradicional Heinz 300g',
             categoria: 'carnes',
             imagem: '../img/molho.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '2.79',
@@ -186,6 +198,7 @@ var db_produtos = {
             descricao: 'Leite Porto Alegre Integral 1l',
             categoria: 'carnes',
             imagem: '../img/leite.jpg',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '3.48',
@@ -201,6 +214,7 @@ var db_produtos = {
             descricao: 'Margarina Qualy 500g',
             categoria: 'carnes',
             imagem: '../img/margarina.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '6.49',
@@ -216,6 +230,7 @@ var db_produtos = {
             descricao: 'Achocolatado Toddy Pote 750g',
             categoria: 'carnes',
             imagem: '../img/toddy.webp',
+            quantidade: "0",
             preco: [
                 {
                     supermercado1: '15.48',

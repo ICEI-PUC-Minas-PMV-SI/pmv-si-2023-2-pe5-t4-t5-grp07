@@ -987,7 +987,13 @@ width: 20px;
         margin: 5px;
         box-shadow: 5px 5px 5px grey;
         border-radius: 10px;
-        font-size: 12px;
+      
+        }
+
+        .produto-item > p {
+
+            font-size: 12px;
+
         }
 
   
@@ -998,7 +1004,7 @@ width: 20px;
 
     #btncomprar {
 
-margin-top: 5px;
+margin-top: 10px;
 
     }
 
