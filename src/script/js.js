@@ -232,6 +232,8 @@ function criarConta() {
 
   sessionStorage.setItem('contaLogada', JSON.stringify(objeto));
   
+  criarCarrinho();
+
   return window.location.href = 'index.html';
 };
 
@@ -245,15 +247,7 @@ function login() {
       if (senha === listaDeContas[i].senha) {
         sessionStorage.setItem('contaLogada',JSON.stringify(listaDeContas[i]));
 
-        let carrinho = {};
-
-        for (i = 0; i < db_produtos.dados.length; i++) {
-          let item = {codigo:db_produtos.dados[i].codigo,qtd:0};
-
-            carrinho[i] = item;
-        }
-
-        sessionStorage.setItem('carrinho', JSON.stringify(carrinho));
+        criarCarrinho();
 
         return window.location.href = 'index.html';
       }
@@ -442,4 +436,16 @@ function pagLogin(parametro) {
 function recuperar() {
   alert('E-mail de recuperação enviado para: '+document.getElementById('recuperarEmail').value);
   return pagLogin();
+}
+
+function criarCarrinho(){
+  let carrinho = {};
+
+        for (i = 0; i < db_produtos.dados.length; i++) {
+          let item = {codigo:db_produtos.dados[i].codigo,qtd:0};
+
+            carrinho[i] = item;
+        }
+
+        sessionStorage.setItem('carrinho', JSON.stringify(carrinho));
 }
