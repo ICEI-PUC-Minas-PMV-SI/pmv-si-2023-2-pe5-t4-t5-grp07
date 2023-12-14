@@ -6,13 +6,9 @@ const items = [
         categoria: 'carnes',
         imagem: '../img/ovo.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '11.50',
-                supermercado2: '12.50',
-                supermercado3: '10.30'
-            }
-        ]
+        supermercado1: '11.50',
+        supermercado2: '12.50',
+        supermercado3: '10.30'
 
     },
 
@@ -22,13 +18,9 @@ const items = [
         categoria: 'cafe',
         imagem: '../img/cafe.jpg',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '13.98',
-                supermercado2: '11.50',
-                supermercado3: '10.00'
-            }
-        ]
+        supermercado1: '13.98',
+        supermercado2: '11.50',
+        supermercado3: '10.00'
 
     },
 
@@ -38,13 +30,10 @@ const items = [
         categoria: 'petiscos',
         imagem: '../img/doritos.jpg',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '9.98',
-                supermercado2: '8.50',
-                supermercado3: '10.50'
-            }
-        ]
+        supermercado1: '9.98',
+        supermercado2: '8.50',
+        supermercado3: '10.50'
+
 
     },
 
@@ -54,13 +43,10 @@ const items = [
         categoria: 'bebidas',
         imagem: '../img/cerveja.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '2.99',
-                supermercado2: '2.49',
-                supermercado3: '3.19'
-            }
-        ]
+        supermercado1: '2.99',
+        supermercado2: '2.49',
+        supermercado3: '3.19'
+
 
     },
 
@@ -70,13 +56,10 @@ const items = [
         categoria: 'biscoitos',
         imagem: '../img/biscoito.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '2.48',
-                supermercado2: '2.19',
-                supermercado3: '2.99'
-            }
-        ]
+        supermercado1: '2.48',
+        supermercado2: '2.19',
+        supermercado3: '2.99'
+
 
     },
 
@@ -86,13 +69,10 @@ const items = [
         categoria: 'massas',
         imagem: '../img/macarrao.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '3.98',
-                supermercado2: '3.50',
-                supermercado3: '3.30'
-            }
-        ]
+        supermercado1: '3.98',
+        supermercado2: '3.50',
+        supermercado3: '3.30'
+
 
     },
 
@@ -102,13 +82,10 @@ const items = [
         categoria: 'carnes',
         imagem: '../img/leitecondensado.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '4.98',
-                supermercado2: '4.50',
-                supermercado3: '4.30'
-            }
-        ]
+        supermercado1: '4.98',
+        supermercado2: '4.50',
+        supermercado3: '4.30'
+
 
     },
 
@@ -118,13 +95,10 @@ const items = [
         categoria: 'limpeza',
         imagem: '../img/omo.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '19.98',
-                supermercado2: '18.50',
-                supermercado3: '19.30'
-            }
-        ]
+        supermercado1: '19.98',
+        supermercado2: '18.50',
+        supermercado3: '19.30'
+
 
     },
 
@@ -134,13 +108,10 @@ const items = [
         categoria: 'carnes',
         imagem: '../img/oleo.jpg',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '8.98',
-                supermercado2: '8.50',
-                supermercado3: '7.30'
-            }
-        ]
+        supermercado1: '8.98',
+        supermercado2: '8.50',
+        supermercado3: '7.30'
+
 
     },
 
@@ -150,13 +121,10 @@ const items = [
         categoria: 'bebidas',
         imagem: '../img/fanta.jpg',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '6.79',
-                supermercado2: '6.50',
-                supermercado3: '7.30'
-            }
-        ]
+        supermercado1: '6.79',
+        supermercado2: '6.50',
+        supermercado3: '7.30'
+
 
     },
 
@@ -166,13 +134,10 @@ const items = [
         categoria: 'padaria',
         imagem: '../img/pao.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '6.39',
-                supermercado2: '6.50',
-                supermercado3: '5.30'
-            }
-        ]
+        supermercado1: '6.39',
+        supermercado2: '6.50',
+        supermercado3: '5.30'
+
 
     },
 
@@ -182,13 +147,10 @@ const items = [
         categoria: 'carnes',
         imagem: '../img/molho.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '2.79',
-                supermercado2: '2.50',
-                supermercado3: '2.30'
-            }
-        ]
+        supermercado1: '2.79',
+        supermercado2: '2.50',
+        supermercado3: '2.30'
+
 
     },
 
@@ -198,13 +160,10 @@ const items = [
         categoria: 'carnes',
         imagem: '../img/leite.jpg',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '3.48',
-                supermercado2: '2.99',
-                supermercado3: '3.30'
-            }
-        ]
+        supermercado1: '3.48',
+        supermercado2: '2.99',
+        supermercado3: '3.30'
+
 
     },
 
@@ -214,13 +173,9 @@ const items = [
         categoria: 'carnes',
         imagem: '../img/margarina.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '6.49',
-                supermercado2: '6.19',
-                supermercado3: '7.30'
-            }
-        ]
+        supermercado1: '6.49',
+        supermercado2: '6.19',
+        supermercado3: '7.30'
 
     },
 
@@ -230,13 +185,10 @@ const items = [
         categoria: 'carnes',
         imagem: '../img/toddy.webp',
         quantidade: "0",
-        preco: [
-            {
-                supermercado1: '15.48',
-                supermercado2: '14.50',
-                supermercado3: '16.30'
-            }
-        ]
+        supermercado1: '15.48',
+        supermercado2: '14.50',
+        supermercado3: '16.30'
+
 
     },
 

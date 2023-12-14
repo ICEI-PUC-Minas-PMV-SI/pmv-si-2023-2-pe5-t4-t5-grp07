@@ -1,3 +1,4 @@
+// Esqueci minha senha
 function enviarsenha() {
     var dataenvio = new Date()
     var email = window.document.getElementById("inputEmail3").value
