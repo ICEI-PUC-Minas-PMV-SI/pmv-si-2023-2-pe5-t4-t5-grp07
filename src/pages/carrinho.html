@@ -77,7 +77,7 @@
             </a> -->
 
             <div class="cart"> <!-- Carrinho -->
-                <a class="button" href="informacao.html">
+                <a class="button" href="gerenciamento.html">
                     <p id="cart"> <span class="material-symbols-outlined">
                             person
                         </span></p>
@@ -99,7 +99,7 @@
         </div>
         <div class="cart"> <!-- Carrinho -->
             <a class="button" href="">
-                <p onclick="logoutUser ()" id="cart"><span class="material-symbols-outlined">
+                <p onclick="deslogar()" id="cart"><span class="material-symbols-outlined">
                         logout
                     </span></p>
             </a>
@@ -107,140 +107,27 @@
 
         </div>
     </header>
-
-
     <main>
-
-
-
     </main>
-
-    <section>
-
-        <div class="listaitens">
-
-            <div class="produto-carrinho">
-                <div class="item-carrinho">
-                    <img src="../img/biscoito.webp" alt="">
-                </div>
-                <div class="item-carrinho">
-                    <p>Biscoito Danix Recheado Morango 130g</p>
-                    <p>Quantidade: 3</p>
-                </div>
-            </div>
-
-            <div class="produto-carrinho">
-                <div class="item-carrinho">
-                    <img src="../img/ovo.webp" alt="">
-                </div>
-                <div class="item-carrinho">
-                    <p>Ovos Branco Perfa 20 Un</p>
-                    <p>Quantidade: 2</p>
-                </div>
-            </div>
-
-            <div class="produto-carrinho">
-                <div class="item-carrinho">
-                    <img src="../img/cafe.jpg" alt="">
-                </div>
-                <div class="item-carrinho">
-                    <p>Café Extraforte Fino Grão Pacote 500g</p>
-                    <p>Quantidade: 3</p>
-                </div>
-            </div>
-
-            <div class="produto-carrinho">
-                <div class="item-carrinho">
-                    <img src="../img/doritos.jpg" alt="">
-                </div>
-                <div class="item-carrinho">
-                    <p>Salgadinho Doritos Queijo Nacho 140g</p>
-                    <p>Quantidade: 1</p>
-                </div>
-            </div>
+    <section class="sectionCarrinho">
+        <div id="listaitens">
 
         </div>
-
-
-
-        <div class="listamercados">
-            <div class="mercados">
-                <div class="carrinho-mercado">
-                    <p id="nomemercado"><strong>Supermercado 1</strong></p>
-                    <img src="../img/bh.png" alt="">
-                </div>
-                <div class="carrinho-subtotal">
-                    <p>Subtotal: </p>
-                    <p>R$ 120.00</p>
-                </div>
-                <div class="carrinho-frete">
-                    <p>Frete:</p>
-                    <p>R$ 20.00 </p>
-                </div>
-                <div class="carrinho-total">
-                    <p>Total:</p>
-                    <p>R$ 120.00</p>
-                </div>
-
-                <button style="width: 100%;background-color: #0e8d39; border-color: #0e8d39;" type="submit"
-                    class="btn btn-primary">Ir para pagamento</button>
-            </div>
-
-            <div class="mercados">
-                <div class="carrinho-mercado">
-                    <p id="nomemercado"><strong>Supermercado 2</strong></p>
-                    <img src="../img/supernosso.png" alt="">
-                </div>
-                <div class="carrinho-subtotal">
-                    <p>Subtotal: </p>
-                    <p>R$ 120.00</p>
-                </div>
-                <div class="carrinho-frete">
-                    <p>Frete:</p>
-                    <p>R$ 20.00 </p>
-                </div>
-                <div class="carrinho-total">
-                    <p>Total:</p>
-                    <p>R$ 120.00</p>
-                </div>
-                <button style="width: 100%;background-color: #0e8d39; border-color: #0e8d39;" type="submit"
-                    class="btn btn-primary">Ir para pagamento</button>
-            </div>
-            <div class="mercados">
-                <div class="carrinho-mercado">
-                    <p id="nomemercado"><strong>Supermercado 3</strong></p>
-                    <img src="../img/superluna.png" alt="">
-                </div>
-                <div class="carrinho-subtotal">
-                    <p>Subtotal: </p>
-                    <p>R$ 120.00</p>
-                </div>
-                <div class="carrinho-frete">
-                    <p>Frete:</p>
-                    <p>R$ 20.00 </p>
-                </div>
-                <div class="carrinho-total">
-                    <p>Total:</p>
-                    <p>R$ 120.00</p>
-                </div>
-                <button style="width: 100%;background-color: #0e8d39; border-color: #0e8d39;" type="submit"
-                    class="btn btn-primary">Ir para pagamento</button>
-            </div>
-
-
+        <div id="listamercados">
+            
         </div>
-
-
     </section>
-
-
-
+    <footer>
+        PUC Minas - Sistemas de Informação 2/2023
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
     <script src="../script/userdata.js"></script>
-
+    <script src="../script/js.js"></script>
+    <script>
+        carregarProdutos();
+        carregarMercados();
+    </script>
 </body>
-
 </html>

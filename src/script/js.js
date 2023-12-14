@@ -449,3 +449,83 @@ function criarCarrinho(){
 
         sessionStorage.setItem('carrinho', JSON.stringify(carrinho));
 }
+
+function carregarProdutos(){
+  let lProdutos = '';
+  let n = 0;
+  let carrinho = JSON.parse(sessionStorage.getItem('carrinho'));
+
+  for(i=0; i<Object.keys(carrinho).length; i++){
+    if(carrinho[i].qtd > 0){
+      if(n % 2 === 0){
+        lProdutos += `
+        <div class="produto-carrinho par">
+          <img src="${db_produtos.dados[i].imagem}">
+          <p>${db_produtos.dados[i].descricao}</p>
+          <p>Qtd.: ${carrinho[i].qtd}</p>
+        </div>`;
+      } else {
+        lProdutos += `
+        <div class="produto-carrinho impar">
+          <img src="${db_produtos.dados[i].imagem}">
+          <p>${db_produtos.dados[i].descricao}</p>
+          <p>Qtd.: ${carrinho[i].qtd}</p>
+        </div>`;
+      }
+      n++;
+    };
+  };
+
+  return document.getElementById('listaitens').innerHTML = lProdutos;
+}
+
+function carregarMercados() {
+  let lMercados = '';
+  let carrinho = JSON.parse(sessionStorage.getItem('carrinho'));
+  let soma1 = 0;
+  let soma2 = 0;
+  let soma3 = 0;
+  let soma = [];
+
+  for(i=0; i<Object.keys(carrinho).length; i++){
+    soma1 += parseInt(carrinho[i].qtd) * db_produtos.dados[i].preco[0].supermercado1;
+  }
+
+  for(i=0; i<Object.keys(carrinho).length; i++){
+    soma2 += parseInt(carrinho[i].qtd) * db_produtos.dados[i].preco[0].supermercado2;
+  }
+
+  for(i=0; i<Object.keys(carrinho).length; i++){
+    soma3 += parseInt(carrinho[i].qtd) * db_produtos.dados[i].preco[0].supermercado3;
+  }
+
+  soma.push(soma1.toFixed(2));
+  soma.push(soma2.toFixed(2));
+  soma.push(soma3.toFixed(2));
+  console.log(soma);
+
+  for(i=0; i<3; i++){
+    lMercados += `
+    <div class="mercados">
+      <div class="carrinho-mercado">
+        <p id="nomemercado"><strong>${db_mercados.dados[i].mercado}</strong></p>
+        <img src="${db_mercados.dados[i].imagem}" alt="">
+      </div>
+      <div class="carrinho-preco">
+        <p>Subtotal: </p>
+        <p>R$ ${soma[i]}</p>
+      </div>
+      <div class="carrinho-preco">
+        <p>Frete:</p>
+        <p>R$ 20.00 </p>
+      </div>
+      <div class="carrinho-preco">
+        <p>Total:</p>
+        <p>R$ ${parseFloat(soma[i]) + 20.00}</p>
+      </div>
+      <button type="submit" class="pagamento btn btn-primary">Ir para pagamento</button>
+    </div>`;
+  }
+
+  return document.getElementById('listamercados').innerHTML = lMercados;
+}
