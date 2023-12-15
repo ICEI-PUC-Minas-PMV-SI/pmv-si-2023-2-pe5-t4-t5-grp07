@@ -9,9 +9,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '11.98',
-                    supermercado2: '12.50',
-                    supermercado3: '10.30'
+                    supermercado1: 11.98,
+                    supermercado2: 12.50,
+                    supermercado3: 10.30
                 }
             ]
 
@@ -25,9 +25,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '13.98',
-                    supermercado2: '11.50',
-                    supermercado3: '10.00'
+                    supermercado1: 13.98,
+                    supermercado2: 11.50,
+                    supermercado3: 10.00
                 }
             ]
 
@@ -41,9 +41,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '9.98',
-                    supermercado2: '8.50',
-                    supermercado3: '10.50'
+                    supermercado1: 9.98,
+                    supermercado2: 8.50,
+                    supermercado3: 10.50
                 }
             ]
 
@@ -57,9 +57,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '2.99',
-                    supermercado2: '2.49',
-                    supermercado3: '3.19'
+                    supermercado1: 2.99,
+                    supermercado2: 2.49,
+                    supermercado3: 3.19
                 }
             ]
 
@@ -73,9 +73,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '2.48',
-                    supermercado2: '2.19',
-                    supermercado3: '2.99'
+                    supermercado1: 2.48,
+                    supermercado2: 2.19,
+                    supermercado3: 2.99
                 }
             ]
 
@@ -89,9 +89,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '3.98',
-                    supermercado2: '3.50',
-                    supermercado3: '3.30'
+                    supermercado1: 3.98,
+                    supermercado2: 3.50,
+                    supermercado3: 3.30
                 }
             ]
 
@@ -105,9 +105,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '4.98',
-                    supermercado2: '4.50',
-                    supermercado3: '4.30'
+                    supermercado1: 4.98,
+                    supermercado2: 4.50,
+                    supermercado3: 4.30
                 }
             ]
 
@@ -121,9 +121,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '19.98',
-                    supermercado2: '18.50',
-                    supermercado3: '19.30'
+                    supermercado1: 19.98,
+                    supermercado2: 18.50,
+                    supermercado3: 19.30
                 }
             ]
 
@@ -137,9 +137,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '8.98',
-                    supermercado2: '8.50',
-                    supermercado3: '7.30'
+                    supermercado1: 8.98,
+                    supermercado2: 8.50,
+                    supermercado3: 7.30
                 }
             ]
 
@@ -153,9 +153,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '6.79',
-                    supermercado2: '6.50',
-                    supermercado3: '7.30'
+                    supermercado1: 6.79,
+                    supermercado2: 6.50,
+                    supermercado3: 7.30
                 }
             ]
 
@@ -169,9 +169,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '6.39',
-                    supermercado2: '6.50',
-                    supermercado3: '5.30'
+                    supermercado1: 6.39,
+                    supermercado2: 6.50,
+                    supermercado3: 5.30
                 }
             ]
 
@@ -185,9 +185,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '2.79',
-                    supermercado2: '2.50',
-                    supermercado3: '2.30'
+                    supermercado1: 2.79,
+                    supermercado2: 2.50,
+                    supermercado3: 2.30
                 }
             ]
 
@@ -201,9 +201,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '3.48',
-                    supermercado2: '2.99',
-                    supermercado3: '3.30'
+                    supermercado1: 3.48,
+                    supermercado2: 2.99,
+                    supermercado3: 3.30
                 }
             ]
 
@@ -217,9 +217,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '6.49',
-                    supermercado2: '6.19',
-                    supermercado3: '7.30'
+                    supermercado1: 6.49,
+                    supermercado2: 6.19,
+                    supermercado3: 7.30
                 }
             ]
 
@@ -233,9 +233,9 @@ var db_produtos = {
             quantidade: "0",
             preco: [
                 {
-                    supermercado1: '15.48',
-                    supermercado2: '14.50',
-                    supermercado3: '16.30'
+                    supermercado1: 15.48,
+                    supermercado2: 14.50,
+                    supermercado3: 16.30
                 }
             ]
 
@@ -245,5 +245,20 @@ var db_produtos = {
 
 }
 
-
+var db_mercados = {
+    dados: [
+        {
+            mercado: 'Supermercado BH',
+            imagem: '../img/bh.png'
+        },
+        {
+            mercado: 'Supernosso',
+            imagem: '../img/supernosso.png'
+        },
+        {
+            mercado: 'Superluna',
+            imagem: '../img/superluna.png'
+        },
+    ]
+}
 
