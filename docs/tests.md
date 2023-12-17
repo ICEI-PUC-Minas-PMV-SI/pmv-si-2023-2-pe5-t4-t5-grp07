@@ -34,7 +34,7 @@
 
 **Caso de Teste** | **CT05 - Editar itens no carrinho**
  :--------------: | ------------
-**Procedimento**  | 1) Na tala de carrinho, usuário clica no ícone com formatyop de lápis, e pode adionar ou remover novos produtos.
+**Procedimento**  | 1) Na tala de carrinho, usuário clica no ícone com formatyop de <br>lápis, e pode adionar ou remover novos produtos.
 **Requisitos associados** | RF-001
 **Resultado esperado** | Remove o produto ou reduz a quantidade  de itens nos carrinhos
 **Dados de entrada** | Clique no ícone "-" nos card de produtos.
@@ -53,7 +53,7 @@
  :--------------: | ------------
 **Procedimento**  | 1) Usuário adiciona produtos ao carrinho. <br>2) Na tela de carrinho, a aplicação exibe os preços dos produtos e o total da compra em três supermercados diferentes.
 **Requisitos associados** | RF-004
-**Resultado esperado** | Exibir corretamente os preços dos produtos e o total da compra em três supermercados distintos.
+**Resultado esperado** | Exibir corretamente os preços dos produtos e o total da compra em três <br>supermercados distintos.
 **Dados de entrada** | Adição de produtos ao carrinho.
 **Resultado obtido** | Sucesso.
 
@@ -107,73 +107,73 @@ Registro dos Testes de Software
 **Caso de Teste** | **TC-01 - Criar uma conta**
  :--------------: | ------------
 **Requisito Associado** | RF-001 - Cadastro de produtos com descrição, foto, preço e código.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-01](https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-01]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-02 - Cadastrar produtos**
  :--------------: | ------------
 **Requisito Associado** | RF-001 - Cadastro de produtos com descrição, foto, preço e código.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-02](https://1drv.ms/v/s!AhD2JqpOUvJChapQ8CPXL-TI_A7iVg?e=spD3Ar)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-02]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-03 - Adicionar produtos no carrinho**
  :--------------: | ------------
 **Requisito Associado** | RF-002 - Seleção de produtos em formato de carrinho para consulta futura.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-03](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-03]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-04 - Remover produtos no carrinho**
  :--------------: | ------------
 **Requisito Associado** | RF-002 - Seleção de produtos em formato de carrinho para consulta futura.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-04](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-04]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-05 - Editar itens no carrinho**
  :--------------: | ------------
 **Requisito Associado** | RF-002 - Seleção de produtos em formato de carrinho para consulta futura.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-05](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-05]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-06 - Selecionar supermercado por região**
  :--------------: | ------------
 **Requisito Associado** | RF-003 - Escolha de supermercados com base na região selecionada.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-06](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-06]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-07 - Visualizar preços em 3 supermercados**
  :--------------: | ------------
 **Requisito Associado** | RF-004 - Visualização de preços de produtos e total da compra em 3 supermercados.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-07](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-07]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-08 - Atualizar preços de produtos pelos usuários**
  :--------------: | ------------
 **Requisito Associado** | RF-005 - Atualização de preços pelos usuários.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-08](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-08]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-09 - Avaliar supermercados**
  :--------------: | ------------
 **Requisito Associado** | RF-006 - Avaliação dos supermercados por usuários.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-09](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-09]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-10 - Avaliar produtos**
  :--------------: | ------------
 **Requisito Associado** | RF-007 - Avaliação dos produtos com comentários por usuários.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-10](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-10]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-11 - Indicar indisponibilidade de produtos**
  :--------------: | ------------
 **Requisito Associado** | RF-008 - Indicação de indisponibilidade de produtos em supermercados.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-11](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-11]
 **Resultado do Teste** | Sucesso
 
 **Caso de Teste** | **TC-12 - Agrupar produtos por categoria**
  :--------------: | ------------
 **Requisito Associado** | RF-009 - Agrupamento de produtos por categoria.
-**Link do vídeo do teste realizado** | [Vídeo do teste TC-12](Inserir_Link_Aqui)
+**Link do vídeo do teste realizado** | [Vídeo do teste TC-12]
 **Resultado do Teste** | Sucesso
 
 ## Avaliação dos Testes de Software
