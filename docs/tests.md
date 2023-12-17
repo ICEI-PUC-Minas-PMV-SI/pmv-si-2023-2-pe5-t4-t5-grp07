@@ -198,10 +198,3 @@ Os resultados dos testes de software foram, em sua maioria, positivos, indicando
 2. **Aprimoramento na Interface de Avaliação:** Investir em melhorias na interface para incentivar mais usuários a participarem das avaliações de supermercados e produtos.
 3. **Revisão no Agrupamento de Produtos:** Refinar o agrupamento de produtos por categoria, considerando uma organização mais lógica e intuitiva.
 
-## Testes de Unidade Automatizados (Opcional)
-
-O grupo pode considerar a implementação de testes de unidade automatizados para garantir a robustez e estabilidade do código JavaScript desenvolvido. Isso ajudaria a detectar regressões e garantir a qualidade do software.
-
-# Testes de Usabilidade
-
-Os testes de usabilidade foram conduzidos com sucesso, seguindo quatro cenários baseados nas histórias dos usuários. Os indicadores de taxa de sucesso e satisfação subjetiva forneceram insights valiosos sobre a experiência do usuário. As áreas de destaque e oportunidades de melhoria serão abordadas nas próximas iterações do desenvolvimento.
