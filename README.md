@@ -1,3 +1,6 @@
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe5-t4-t5-grp07/assets/34171313/f7cdc320-74d3-428e-93a3-c5b5cd8d7b48)
+
+
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12197126&assignment_repo_type=AssignmentRepo)
 # Comparador de Preços Online
 
