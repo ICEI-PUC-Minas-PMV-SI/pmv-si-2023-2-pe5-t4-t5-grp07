@@ -24,9 +24,7 @@
 **Dados de entrada** | Clique no ícone "+" nos card de produtos.
 **Resultado obtido** | Sucesso.
 
-
-
-**Caso de Teste** | **CT07 -  Visualizar preços em 3 supermercados **
+**Caso de Teste** | **CT04 -  Visualizar preços em 3 supermercados **
  :--------------: | ------------
 **Procedimento**  | 1) Usuário adiciona produtos ao carrinho. <br>2) Na tela de carrinho, a aplicação exibe os preços dos produtos e o total da compra em três supermercados diferentes.
 **Requisitos associados** | RF-004
@@ -37,10 +35,7 @@
 
 ## Registro dos Testes de Software
 
-Registro dos Testes de Software
 
-**Caso de Teste** | **TC-01 - Criar uma conta**
- :--------------: | ------------
 **Link do vídeo do teste realizado** | [([Evidência de teste.zip](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2023-2-pe5-t4-t5-grp07/files/13698816/Evidencia.de.teste.zip)
 )]
 **Resultado do Teste** | Sucesso
