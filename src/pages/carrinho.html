@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="../script/login.js"></script>
     <script src="../script/dbfake.js"></script>
     <script>
         let verificaLogin = sessionStorage.getItem('contaLogada');     
@@ -35,9 +34,11 @@
                 <span class="material-symbols-outlined">
                     search
                 </span>
+                <!-- <img src="../img/lupa.png" alt="Lupa de Pesquisa"> -->
                 <input type="text" placeholder="Buscar Produtos">
             </div>
         </div>
+
         <div class="local"> <!-- Localização -->
             <div>
                 <span class="material-symbols-outlined">
@@ -49,24 +50,21 @@
                 <p id="usuarioendereco">Av. Brasil 100</p>
             </div>
         </div>
-
-        <div class="conta"> <!-- Conta -->
-            <div class="cart"> <!-- Carrinho -->
-                <a class="button" href="gerenciamento.html">
-                    <p id="cart"> <span class="material-symbols-outlined">
-                            person
-                        </span></p>
-                </a>
-            </div>
-        </div>  
+        <div class="cart"> <!-- Conta -->
+            <a class="button" href="gerenciamento.html">
+                <p id="cart"> <span class="material-symbols-outlined">
+                        person
+                    </span></p>
+            </a>
+        </div>
         <div class="cart"> <!-- Carrinho -->
             <a class="button" href="carrinho.html">
                 <p id="cart"><span class="material-symbols-outlined">shopping_cart</span></p>
             </a>
         </div>
         <div class="cart"> <!-- Logout -->
-            <a class="button" href="">
-                <p onclick="deslogar()" id="cart"><span class="material-symbols-outlined">
+            <a onclick="deslogar()" class="button" href="">
+                <p id="cart"><span class="material-symbols-outlined">
                         logout
                     </span></p>
             </a>

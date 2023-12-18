@@ -5,24 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compare Preços</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="..\css\css.css">
+    <link rel="stylesheet" href="../css/css.css">
     <script src="../script/dbfake.js"></script>
 </head>
 <script>
 
 function initPage() {
 start()
-// Associa a função de logout ao botão
-// document.getElementById('logout').addEventListener('click', logoutUser);
+
 
 //Puxa dados do sessionStorage da conta logada
 let logado = JSON.parse(sessionStorage.getItem('contaLogada'));
 
-// Informa o nome do usuário logado
-//document.getElementById('nomeUsuario').innerHTML = logado.nome;
-
-// Lista os usuários 
-//exibeUsuarios();
 }
 
 // Associa ao evento de carga da página a função para verificar se o usuário está logado
@@ -33,7 +27,7 @@ window.addEventListener('load', initPage);
 
     <header id="headerTipo1">
         <div class="home">
-            <img class="logo" src="..\img\logo.png" alt="Erro" >
+            <img class="logo" src="../img/logosmall.png" alt="Logo" >
         </div>
         <div>
             <p id="marca">Compare Preços</p>
@@ -41,7 +35,7 @@ window.addEventListener('load', initPage);
     </header>
     <main id="mainTipo1">
         <div id="mercado">
-            <img src="..\img\mercado.png" alt="Erro">
+            <img src="..\img\mercado.png" alt="Mercado">
         </div>
         <div id="containerLogin">
             <div id="login">

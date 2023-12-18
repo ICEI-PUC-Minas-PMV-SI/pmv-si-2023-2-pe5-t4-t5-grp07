@@ -234,7 +234,7 @@ function criarConta() {
   
   criarCarrinho();
 
-  return window.location.href = 'index.html';
+  return window.location.href = 'login.html';
 };
 
 function login() {
